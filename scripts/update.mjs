@@ -37,17 +37,30 @@ async function prices(cc) {
   return out;
 }
 
-// 封面图：每款游戏查一次（结果缓存，之后只查新加的游戏）
-async function headerImages(prev) {
+// 游戏资料（中文名、简介、类型、开发商、年份、封面）：只给新加的游戏查一次，之后缓存
+const clean = s => (s || "").replace(/<[^>]+>/g, "").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
+async function details(prev) {
   const out = {};
   for (const g of GAMES) {
-    if (prev?.[g.id]?.img) { out[g.id] = prev[g.id].img; continue; }
+    const cached = prev?.[g.id]?.img;
+    if (cached && g.zh && g.intro) { out[g.id] = cached; continue; }
     try {
       const j = await getJSON(`https://store.steampowered.com/api/appdetails?appids=${g.id}&l=schinese&cc=cn`);
       const d = j?.[g.id]?.data;
-      out[g.id] = d?.header_image || null;
-      if (d && !g.zh) g.zh = d.name;
-    } catch { out[g.id] = null; }
+      out[g.id] = d?.header_image || cached || null;
+      if (d) {
+        g.zh ||= d.name;
+        g.intro ||= clean(d.short_description).slice(0, 90);
+        g.genre ||= (d.genres || []).slice(0, 3).map(x => x.description).join(" · ");
+        g.dev ||= (d.developers || [])[0] || "";
+        g.year ||= (clean(d.release_date?.date).match(/(19|20)\d\d/) || [""])[0];
+      }
+      if (!g.en) {
+        await sleep(1600);
+        const e = await getJSON(`https://store.steampowered.com/api/appdetails?appids=${g.id}&l=english&filters=basic`);
+        g.en = e?.[g.id]?.data?.name || "";
+      }
+    } catch { out[g.id] = cached || null; }
     await sleep(1600);
   }
   return out;
@@ -67,7 +80,7 @@ let prevRate = null;
 try { prevRate = JSON.parse(await fs.readFile(OUT, "utf8")).rate; } catch {}
 
 const [ua, cn] = [await prices("ua"), await prices("cn")];
-const imgs = await headerImages(prev);
+const imgs = await details(prev);
 const r = (await rate()) || prevRate;
 
 const result = { updated: new Date().toISOString(), rate: r, prices: {} };

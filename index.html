@@ -123,8 +123,8 @@ async function load(){
   RATE_DEFAULT = pr.rate?.UAH_CNY || 0.147; RATE_SRC = pr.rate?.src || "";
   SNAPSHOT = new Date(pr.updated).toLocaleString("zh-CN",{timeZone:"Asia/Tokyo",hour12:false}) + " (JST)";
   for (const g of games){
-    const p = pr.prices[g.id]; if(!p || !p.ua || !p.cn) continue;
-    DATA.push([g.id,g.zh,g.en||"",...p.ua,...p.cn]);
+    const p = pr.prices[g.id]; if(!p || (!p.ua && !p.cn)) continue;
+    DATA.push([g.id,g.zh||g.en||("App "+g.id),g.en||"",...(p.ua||[null,null,0]),...(p.cn||[null,null,0])]);
     META[g.id]=[g.genre||"",g.dev||"",g.year||"",g.intro||""];
     IMG[g.id]=p.img;
   }
@@ -145,9 +145,10 @@ const fmtCN = c => "¥" + (c/100).toLocaleString("zh-CN",{minimumFractionDigits:
 function rows(){
   return DATA.map(d=>{
     const [id,zh,en,ui,uf,ud,ci,cf,cd] = d;
-    const uaCny = uf*rate; // in fen
-    const pct = cf ? (uaCny - cf)/cf*100 : 0; // negative => UA cheaper
-    let win = "eq"; if(pct <= -3) win="ua"; else if(pct >= 3) win="cn";
+    const uaCny = uf==null ? null : uf*rate; // in fen
+    const na = uf==null || cf==null || cf===0;
+    const pct = na ? 0 : (uaCny - cf)/cf*100; // negative => UA cheaper
+    let win = na ? "na" : "eq"; if(!na && pct <= -3) win="ua"; else if(!na && pct >= 3) win="cn";
     return {id,zh,en,ui,uf,ud,ci,cf,cd,uaCny,pct,win};
   });
 }
@@ -163,16 +164,17 @@ function render(){
   if(filter==="cn") rs = rs.filter(r=>r.win==="cn");
   if(filter==="sale") rs = rs.filter(r=>r.ud>0||r.cd>0);
   const s = $("sort").value;
-  rs.sort((a,b)=> s==="diff"?a.pct-b.pct : s==="disc"?Math.max(b.ud,b.cd)-Math.max(a.ud,a.cd) : s==="ua"?a.uaCny-b.uaCny : a.zh.localeCompare(b.zh,"zh"));
+  rs.sort((a,b)=> (a.win==="na")-(b.win==="na") || (s==="diff"?a.pct-b.pct : s==="disc"?Math.max(b.ud,b.cd)-Math.max(a.ud,a.cd) : s==="ua"?a.uaCny-b.uaCny : a.zh.localeCompare(b.zh,"zh")));
   $("list").innerHTML = rs.length ? rs.map(card).join("") : `<div class="empty">没有符合条件的游戏</div>`;
 }
 
 function card(r){
   const badge = r.win==="ua" ? `<span class="badge b-ua">乌区便宜 ${Math.abs(r.pct).toFixed(0)}%</span>`
               : r.win==="cn" ? `<span class="badge b-cn">国区便宜 ${Math.abs(r.pct).toFixed(0)}%</span>`
+              : r.win==="na" ? `<span class="badge b-eq">${r.uf==null?"乌区":"国区"}未上架</span>`
               : `<span class="badge b-eq">差不多</span>`;
-  const save = Math.abs(r.uaCny - r.cf);
-  const diffTxt = r.win==="eq" ? `两区相差 ${fmtCN(save)}` : `${r.win==="ua"?"在乌区买":"在国区买"}约省 <b>${fmtCN(save)}</b>`;
+  const save = Math.abs((r.uaCny||0) - (r.cf||0));
+  const diffTxt = r.win==="na" ? `只有${r.uf==null?"国区":"乌区"}在卖，没法比价` : r.win==="eq" ? `两区相差 ${fmtCN(save)}` : `${r.win==="ua"?"在乌区买":"在国区买"}约省 <b>${fmtCN(save)}</b>`;
   const zhe = d => { const z=(100-d)/10; return (Number.isInteger(z)?z:z.toFixed(1))+"折"; };
   const saleTag = d => `<span class="saletag">-${d}% · ${zhe(d)}</span>`;
   const uaOld = r.ud ? `原价 <span class="strike">${fmtUA(r.ui)}</span> ≈ ${fmtCN(r.ui*rate)}` : "原价，未打折";
@@ -180,6 +182,7 @@ function card(r){
   const maxD = Math.max(r.ud,r.cd);
   const bannerSale = maxD ? `<span class="bsale">🔥 打折中 ${r.ud&&r.cd&&r.ud!==r.cd?`乌区${zhe(r.ud)} / 国区${zhe(r.cd)}`:zhe(maxD)}</span>` : "";
   const m = META[r.id] || ["","","",""];
+  if(!m[3] && !m[0]) m[3]="（简介将在下次自动更新时从 Steam 抓取）";
   const h = hue(r.id);
   return `<div class="game">
     <div class="banner" style="background:linear-gradient(120deg,hsl(${h},55%,28%),hsl(${(h+40)%360},60%,45%))">
@@ -190,10 +193,10 @@ function card(r){
     <div class="body">
     <div class="tags">${m[0].split(" · ").filter(Boolean).map(t=>`<span class="tag">${t}</span>`).join("")}</div>
     <div class="intro">${m[3]}</div>
-    <div class="dev">开发：${m[1]}</div>
+    ${m[1]?`<div class="dev">开发：${m[1]}</div>`:""}
     <div class="prices">
-      <div class="p ${r.win==="ua"?"win":""} ${r.ud?"sale":""}"><div class="lab">🇺🇦 乌克兰区</div><div class="v">${fmtUA(r.uf)}${r.ud?saleTag(r.ud):""}</div><div class="o">${r.ud?"折后":""}≈ ${fmtCN(r.uaCny)}</div><div class="o">${uaOld}</div></div>
-      <div class="p ${r.win==="cn"?"win":""} ${r.cd?"sale":""}"><div class="lab">🇨🇳 国区</div><div class="v">${fmtCN(r.cf)}${r.cd?saleTag(r.cd):""}</div><div class="o">${r.cd?"折后价":"&nbsp;"}</div><div class="o">${cnOld}</div></div>
+      <div class="p ${r.win==="ua"?"win":""} ${r.ud?"sale":""}"><div class="lab">🇺🇦 乌克兰区</div>${r.uf==null?`<div class="v">未上架</div><div class="o">乌区买不到</div>`:`<div class="v">${fmtUA(r.uf)}${r.ud?saleTag(r.ud):""}</div><div class="o">${r.ud?"折后":""}≈ ${fmtCN(r.uaCny)}</div><div class="o">${uaOld}</div>`}</div>
+      <div class="p ${r.win==="cn"?"win":""} ${r.cd?"sale":""}"><div class="lab">🇨🇳 国区</div>${r.cf==null?`<div class="v">未上架</div><div class="o">国区买不到</div>`:`<div class="v">${fmtCN(r.cf)}${r.cd?saleTag(r.cd):""}</div><div class="o">${r.cd?"折后价":"&nbsp;"}</div><div class="o">${cnOld}</div>`}</div>
     </div>
     <div class="diff">${diffTxt}</div>
     <div class="links"><a href="https://store.steampowered.com/app/${r.id}/">Steam 商店</a><a href="https://steamdb.info/app/${r.id}/">SteamDB 全区价格/史低</a></div>
