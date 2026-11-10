@@ -58,6 +58,9 @@ a{color:#58a6ff;text-decoration:none}
 .tag{font-size:12px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:1px 7px}
 .intro{font-size:14px;color:#c9d4de;margin:4px 0 2px}
 .dev{font-size:12px;color:var(--mut)}
+.saletag{display:inline-block;margin-left:6px;vertical-align:middle;font-size:12px;font-weight:800;color:#0f141a;background:#a4d007;padding:1px 6px;border-radius:4px}
+.bsale{position:absolute;bottom:10px;left:12px;z-index:2;font-size:13px;font-weight:800;color:#0f141a;background:#a4d007;padding:3px 9px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.p.sale{border-color:#a4d007}
 .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .banner.has-img .bt,.banner.has-img .be{display:none}
 .banner.has-img::after{background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 35%)}
@@ -170,14 +173,18 @@ function card(r){
               : `<span class="badge b-eq">差不多</span>`;
   const save = Math.abs(r.uaCny - r.cf);
   const diffTxt = r.win==="eq" ? `两区相差 ${fmtCN(save)}` : `${r.win==="ua"?"在乌区买":"在国区买"}约省 <b>${fmtCN(save)}</b>`;
-  const uaOld = r.ud ? `<span class="strike">${fmtUA(r.ui)}</span><span class="disc">-${r.ud}%</span>` : "原价";
-  const cnOld = r.cd ? `<span class="strike">${fmtCN(r.ci)}</span><span class="disc">-${r.cd}%</span>` : "原价";
+  const zhe = d => { const z=(100-d)/10; return (Number.isInteger(z)?z:z.toFixed(1))+"折"; };
+  const saleTag = d => `<span class="saletag">-${d}% · ${zhe(d)}</span>`;
+  const uaOld = r.ud ? `原价 <span class="strike">${fmtUA(r.ui)}</span> ≈ ${fmtCN(r.ui*rate)}` : "原价，未打折";
+  const cnOld = r.cd ? `原价 <span class="strike">${fmtCN(r.ci)}</span>` : "原价，未打折";
+  const maxD = Math.max(r.ud,r.cd);
+  const bannerSale = maxD ? `<span class="bsale">🔥 打折中 ${r.ud&&r.cd&&r.ud!==r.cd?`乌区${zhe(r.ud)} / 国区${zhe(r.cd)}`:zhe(maxD)}</span>` : "";
   const m = META[r.id] || ["","","",""];
   const h = hue(r.id);
   return `<div class="game">
     <div class="banner" style="background:linear-gradient(120deg,hsl(${h},55%,28%),hsl(${(h+40)%360},60%,45%))">
       <img loading="lazy" alt="" src="${IMG[r.id]||`https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${r.id}/header.jpg`}" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
-      ${badge}<span class="yr">${m[2]}</span>
+      ${badge}${bannerSale}<span class="yr">${m[2]}</span>
       <div class="bt">${r.zh}</div><div class="be">${r.en}</div>
     </div>
     <div class="body">
@@ -185,8 +192,8 @@ function card(r){
     <div class="intro">${m[3]}</div>
     <div class="dev">开发：${m[1]}</div>
     <div class="prices">
-      <div class="p ${r.win==="ua"?"win":""}"><div class="lab">🇺🇦 乌克兰区</div><div class="v">${fmtUA(r.uf)}</div><div class="o">≈ ${fmtCN(r.uaCny)} · ${uaOld}</div></div>
-      <div class="p ${r.win==="cn"?"win":""}"><div class="lab">🇨🇳 国区</div><div class="v">${fmtCN(r.cf)}</div><div class="o">${cnOld}</div></div>
+      <div class="p ${r.win==="ua"?"win":""} ${r.ud?"sale":""}"><div class="lab">🇺🇦 乌克兰区</div><div class="v">${fmtUA(r.uf)}${r.ud?saleTag(r.ud):""}</div><div class="o">${r.ud?"折后":""}≈ ${fmtCN(r.uaCny)}</div><div class="o">${uaOld}</div></div>
+      <div class="p ${r.win==="cn"?"win":""} ${r.cd?"sale":""}"><div class="lab">🇨🇳 国区</div><div class="v">${fmtCN(r.cf)}${r.cd?saleTag(r.cd):""}</div><div class="o">${r.cd?"折后价":"&nbsp;"}</div><div class="o">${cnOld}</div></div>
     </div>
     <div class="diff">${diffTxt}</div>
     <div class="links"><a href="https://store.steampowered.com/app/${r.id}/">Steam 商店</a><a href="https://steamdb.info/app/${r.id}/">SteamDB 全区价格/史低</a></div>
