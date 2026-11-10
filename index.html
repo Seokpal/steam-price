@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam 乌克兰区 vs 国区 比价</title>
+<style>
+:root{--bg:#0f141a;--card:#18202a;--line:#263241;--txt:#e6edf3;--mut:#8b9bab;--ua:#ffd23f;--ua2:#2f6fde;--cn:#e5484d;--good:#3fb950;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.45 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+header{padding:18px 16px 8px;max-width:860px;margin:0 auto}
+h1{font-size:20px;margin:0 0 4px}
+.sub{color:var(--mut);font-size:13px}
+.wrap{max-width:860px;margin:0 auto;padding:0 12px 40px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select{background:#0f141a;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:15px}
+input[type=search]{flex:1;min-width:160px}
+.rate{width:110px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--mut);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--txt);color:var(--bg);border-color:var(--txt)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center}
+.stat b{display:block;font-size:20px}
+.stat span{font-size:12px;color:var(--mut)}
+.game{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0}
+.top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.name{font-weight:600}
+.badge{font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.b-ua{background:linear-gradient(90deg,var(--ua2),var(--ua));color:#111}
+.b-cn{background:var(--cn);color:#fff}
+.b-eq{background:var(--line);color:var(--mut)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.p{border-radius:8px;padding:8px;background:#0f141a;border:1px solid var(--line)}
+.p.win{border-color:var(--good)}
+.p .lab{font-size:12px;color:var(--mut)}
+.p .v{font-size:17px;font-weight:700}
+.p .o{font-size:12px;color:var(--mut)}
+.disc{color:var(--good);font-weight:700;font-size:12px;margin-left:4px}
+.strike{text-decoration:line-through}
+.links{margin-top:8px;font-size:13px;display:flex;gap:14px}
+a{color:#58a6ff;text-decoration:none}
+.diff{font-size:13px;margin-top:6px;color:var(--mut)}
+.diff b{color:var(--txt)}
+.note{font-size:12.5px;color:var(--mut)}
+.note li{margin:3px 0}
+.empty{text-align:center;color:var(--mut);padding:30px}
+.game{padding:0;overflow:hidden}
+.body{padding:12px}
+.banner{position:relative;aspect-ratio:460/215;min-height:92px;padding:12px 14px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.banner::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.18),transparent 45%),linear-gradient(0deg,rgba(0,0,0,.45),transparent 70%);pointer-events:none}
+.banner .bt{position:relative;z-index:1;font-size:21px;font-weight:800;letter-spacing:.5px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.banner .be{position:relative;z-index:1;font-size:12px;opacity:.85;text-transform:uppercase;letter-spacing:1px}
+.banner .yr{position:absolute;top:10px;right:12px;z-index:1;font-size:12px;background:rgba(0,0,0,.35);padding:2px 8px;border-radius:999px}
+.banner .badge{position:absolute;top:10px;left:12px;z-index:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.tag{font-size:12px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:1px 7px}
+.intro{font-size:14px;color:#c9d4de;margin:4px 0 2px}
+.dev{font-size:12px;color:var(--mut)}
+.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.banner.has-img .bt,.banner.has-img .be{display:none}
+.banner.has-img::after{background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 35%)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Steam 比价：🇺🇦 乌克兰区 vs 🇨🇳 国区</h1>
+  <div class="sub" id="meta"></div>
+</header>
+<div class="wrap">
+  <div class="panel">
+    <div class="row">
+      <input type="search" id="q" placeholder="搜索游戏名 / 类型 / 开发商">
+      <select id="sort">
+        <option value="diff">按差价排序</option>
+        <option value="disc">按折扣排序</option>
+        <option value="ua">乌克兰区价格低→高</option>
+        <option value="name">按名称</option>
+      </select>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <span class="note">汇率 1₴ =</span>
+      <input class="rate" id="rate" type="number" step="0.0001" inputmode="decimal">
+      <span class="note">¥（可改成你银行卡实际汇率）</span>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip on" data-f="all">全部</button>
+      <button class="chip" data-f="ua">乌区更便宜</button>
+      <button class="chip" data-f="cn">国区更便宜</button>
+      <button class="chip" data-f="sale">正在打折</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b id="sUa">0</b><span>乌区更便宜</span></div>
+    <div class="stat"><b id="sCn">0</b><span>国区更便宜</span></div>
+    <div class="stat"><b id="sSale">0</b><span>正在打折</span></div>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="panel note">
+    <b>说明</b>
+    <ul>
+      <li>价格来源：Steam 官方商店接口 <code>store.steampowered.com/api/appdetails</code>（cc=ua / cc=cn），和 SteamDB 的数据源是同一个。SteamDB 本身没有公开接口，所以每款游戏都附了 SteamDB 链接，可以点进去看全区价格和史低。</li>
+      <li>乌区价格按上方汇率折算成人民币后比较，差价在 ±3% 以内算"差不多"。</li>
+      <li>价格每 6 小时自动更新一次（时间见顶部），下单前请以 Steam 页面为准。</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+let DATA=[], META={}, IMG={}, SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
+const hue = id => (id*137.508)%360;
+async function load(){
+  const [games, pr] = await Promise.all([
+    fetch("data/games.json",{cache:"no-store"}).then(r=>r.json()),
+    fetch("data/prices.json",{cache:"no-store"}).then(r=>r.json())]);
+  RATE_DEFAULT = pr.rate?.UAH_CNY || 0.147; RATE_SRC = pr.rate?.src || "";
+  SNAPSHOT = new Date(pr.updated).toLocaleString("zh-CN",{timeZone:"Asia/Tokyo",hour12:false}) + " (JST)";
+  for (const g of games){
+    const p = pr.prices[g.id]; if(!p || !p.ua || !p.cn) continue;
+    DATA.push([g.id,g.zh,g.en||"",...p.ua,...p.cn]);
+    META[g.id]=[g.genre||"",g.dev||"",g.year||"",g.intro||""];
+    IMG[g.id]=p.img;
+  }
+}
+let rate = 0.147, filter = "all";
+const $ = id => document.getElementById(id);
+async function init(){
+await load();
+try{ const r = parseFloat(localStorage.getItem("uaRate")); rate = r>0 ? r : RATE_DEFAULT; }catch(e){ rate = RATE_DEFAULT; }
+$("rate").value = rate;
+$("meta").textContent = `价格更新于：${SNAPSHOT} · ${DATA.length} 款游戏 · 汇率 ${RATE_SRC}`;
+render();
+}
+
+const fmtUA = c => (c/100).toLocaleString("zh-CN",{maximumFractionDigits:2}) + " ₴";
+const fmtCN = c => "¥" + (c/100).toLocaleString("zh-CN",{minimumFractionDigits:0,maximumFractionDigits:2});
+
+function rows(){
+  return DATA.map(d=>{
+    const [id,zh,en,ui,uf,ud,ci,cf,cd] = d;
+    const uaCny = uf*rate; // in fen
+    const pct = cf ? (uaCny - cf)/cf*100 : 0; // negative => UA cheaper
+    let win = "eq"; if(pct <= -3) win="ua"; else if(pct >= 3) win="cn";
+    return {id,zh,en,ui,uf,ud,ci,cf,cd,uaCny,pct,win};
+  });
+}
+
+function render(){
+  const q = $("q").value.trim().toLowerCase();
+  let rs = rows();
+  $("sUa").textContent = rs.filter(r=>r.win==="ua").length;
+  $("sCn").textContent = rs.filter(r=>r.win==="cn").length;
+  $("sSale").textContent = rs.filter(r=>r.ud>0||r.cd>0).length;
+  if(q) rs = rs.filter(r=>(r.zh+r.en+r.id+(META[r.id]||[]).join("")).toLowerCase().includes(q));
+  if(filter==="ua") rs = rs.filter(r=>r.win==="ua");
+  if(filter==="cn") rs = rs.filter(r=>r.win==="cn");
+  if(filter==="sale") rs = rs.filter(r=>r.ud>0||r.cd>0);
+  const s = $("sort").value;
+  rs.sort((a,b)=> s==="diff"?a.pct-b.pct : s==="disc"?Math.max(b.ud,b.cd)-Math.max(a.ud,a.cd) : s==="ua"?a.uaCny-b.uaCny : a.zh.localeCompare(b.zh,"zh"));
+  $("list").innerHTML = rs.length ? rs.map(card).join("") : `<div class="empty">没有符合条件的游戏</div>`;
+}
+
+function card(r){
+  const badge = r.win==="ua" ? `<span class="badge b-ua">乌区便宜 ${Math.abs(r.pct).toFixed(0)}%</span>`
+              : r.win==="cn" ? `<span class="badge b-cn">国区便宜 ${Math.abs(r.pct).toFixed(0)}%</span>`
+              : `<span class="badge b-eq">差不多</span>`;
+  const save = Math.abs(r.uaCny - r.cf);
+  const diffTxt = r.win==="eq" ? `两区相差 ${fmtCN(save)}` : `${r.win==="ua"?"在乌区买":"在国区买"}约省 <b>${fmtCN(save)}</b>`;
+  const uaOld = r.ud ? `<span class="strike">${fmtUA(r.ui)}</span><span class="disc">-${r.ud}%</span>` : "原价";
+  const cnOld = r.cd ? `<span class="strike">${fmtCN(r.ci)}</span><span class="disc">-${r.cd}%</span>` : "原价";
+  const m = META[r.id] || ["","","",""];
+  const h = hue(r.id);
+  return `<div class="game">
+    <div class="banner" style="background:linear-gradient(120deg,hsl(${h},55%,28%),hsl(${(h+40)%360},60%,45%))">
+      <img loading="lazy" alt="" src="${IMG[r.id]||`https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${r.id}/header.jpg`}" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
+      ${badge}<span class="yr">${m[2]}</span>
+      <div class="bt">${r.zh}</div><div class="be">${r.en}</div>
+    </div>
+    <div class="body">
+    <div class="tags">${m[0].split(" · ").filter(Boolean).map(t=>`<span class="tag">${t}</span>`).join("")}</div>
+    <div class="intro">${m[3]}</div>
+    <div class="dev">开发：${m[1]}</div>
+    <div class="prices">
+      <div class="p ${r.win==="ua"?"win":""}"><div class="lab">🇺🇦 乌克兰区</div><div class="v">${fmtUA(r.uf)}</div><div class="o">≈ ${fmtCN(r.uaCny)} · ${uaOld}</div></div>
+      <div class="p ${r.win==="cn"?"win":""}"><div class="lab">🇨🇳 国区</div><div class="v">${fmtCN(r.cf)}</div><div class="o">${cnOld}</div></div>
+    </div>
+    <div class="diff">${diffTxt}</div>
+    <div class="links"><a href="https://store.steampowered.com/app/${r.id}/">Steam 商店</a><a href="https://steamdb.info/app/${r.id}/">SteamDB 全区价格/史低</a></div>
+    </div>
+  </div>`;
+}
+
+$("q").addEventListener("input",render);
+$("sort").addEventListener("change",render);
+$("rate").addEventListener("input",e=>{const v=parseFloat(e.target.value); if(v>0){rate=v; try{localStorage.setItem("uaRate",v)}catch(_){} render();}});
+$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip"); if(!b) return; filter=b.dataset.f; document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c===b)); render();});
+init().catch(e=>{$("list").innerHTML=`<div class="empty">数据加载失败：${e.message}</div>`});
+</script>
+</body>
+</html>

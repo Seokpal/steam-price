@@ -1,0 +1,497 @@
+[
+ {
+  "id": 1091500,
+  "zh": "赛博朋克 2077",
+  "en": "Cyberpunk 2077",
+  "genre": "开放世界 · 动作RPG",
+  "dev": "CD PROJEKT RED",
+  "year": "2020",
+  "intro": "在赛博都市夜之城里的第一人称动作角色扮演，2.0 更新后口碑大翻身。"
+ },
+ {
+  "id": 292030,
+  "zh": "巫师 3：狂猎",
+  "en": "The Witcher 3: Wild Hunt",
+  "genre": "开放世界 · RPG",
+  "dev": "CD PROJEKT RED",
+  "year": "2015",
+  "intro": "猎魔人杰洛特寻找养女希里，主线和支线剧情都被公认为顶级。"
+ },
+ {
+  "id": 1245620,
+  "zh": "艾尔登法环",
+  "en": "ELDEN RING",
+  "genre": "魂系 · 开放世界",
+  "dev": "FromSoftware",
+  "year": "2022",
+  "intro": "宫崎英高与乔治·R·R·马丁合作的开放世界魂游，难度高、探索自由。"
+ },
+ {
+  "id": 2622380,
+  "zh": "艾尔登法环 黑夜君临",
+  "en": "ELDEN RING NIGHTREIGN",
+  "genre": "多人合作 · 肉鸽动作",
+  "dev": "FromSoftware",
+  "year": "2025",
+  "intro": "艾尔登法环衍生作，三人组队在不断缩圈的地图里限时成长、挑战 Boss。"
+ },
+ {
+  "id": 2358720,
+  "zh": "黑神话：悟空",
+  "en": "Black Myth: Wukong",
+  "genre": "动作RPG",
+  "dev": "游戏科学",
+  "year": "2024",
+  "intro": "以《西游记》为蓝本的国产 3A 动作游戏，Boss 战和美术都很出彩。"
+ },
+ {
+  "id": 1174180,
+  "zh": "荒野大镖客：救赎 2",
+  "en": "Red Dead Redemption 2",
+  "genre": "开放世界 · 动作冒险",
+  "dev": "Rockstar Games",
+  "year": "2019",
+  "intro": "西部时代末期的亡命之徒亚瑟·摩根，细节和叙事极其扎实。"
+ },
+ {
+  "id": 3240220,
+  "zh": "GTA V 增强版",
+  "en": "Grand Theft Auto V Enhanced",
+  "genre": "开放世界 · 动作",
+  "dev": "Rockstar Games",
+  "year": "2025",
+  "intro": "GTA V 次世代增强版，加入光追等画质升级，含 GTA 线上模式。"
+ },
+ {
+  "id": 1086940,
+  "zh": "博德之门 3",
+  "en": "Baldur's Gate 3",
+  "genre": "CRPG · 回合制",
+  "dev": "Larian Studios",
+  "year": "2023",
+  "intro": "基于 D&D 5E 规则，选择自由度极高，最多四人联机。"
+ },
+ {
+  "id": 2246340,
+  "zh": "怪物猎人 荒野",
+  "en": "Monster Hunter Wilds",
+  "genre": "动作 · 狩猎",
+  "dev": "CAPCOM",
+  "year": "2025",
+  "intro": "怪猎系列最新作，无缝大地图加动态天候，可联机狩猎。"
+ },
+ {
+  "id": 582010,
+  "zh": "怪物猎人：世界",
+  "en": "Monster Hunter: World",
+  "genre": "动作 · 狩猎",
+  "dev": "CAPCOM",
+  "year": "2018",
+  "intro": "系列销量最高的一作，建议连「冰原」DLC 一起入。"
+ },
+ {
+  "id": 1446780,
+  "zh": "怪物猎人 崛起",
+  "en": "Monster Hunter Rise",
+  "genre": "动作 · 狩猎",
+  "dev": "CAPCOM",
+  "year": "2022",
+  "intro": "加入翔虫和随从牙猎犬，节奏更快；「曙光」DLC 另售。"
+ },
+ {
+  "id": 814380,
+  "zh": "只狼：影逝二度",
+  "en": "Sekiro: Shadows Die Twice",
+  "genre": "动作冒险",
+  "dev": "FromSoftware",
+  "year": "2019",
+  "intro": "战国背景的拼刀弹反战斗，TGA 年度游戏。"
+ },
+ {
+  "id": 374320,
+  "zh": "黑暗之魂 3",
+  "en": "DARK SOULS III",
+  "genre": "魂系 · 动作RPG",
+  "dev": "FromSoftware",
+  "year": "2016",
+  "intro": "黑魂三部曲终章，地图和 Boss 设计都很经典。"
+ },
+ {
+  "id": 990080,
+  "zh": "霍格沃茨之遗",
+  "en": "Hogwarts Legacy",
+  "genre": "开放世界 · 动作RPG",
+  "dev": "Avalanche Software",
+  "year": "2023",
+  "intro": "19 世纪霍格沃茨的学生生活，城堡还原度很高。"
+ },
+ {
+  "id": 2050650,
+  "zh": "生化危机 4 重制版",
+  "en": "Resident Evil 4",
+  "genre": "生存恐怖 · 动作",
+  "dev": "CAPCOM",
+  "year": "2023",
+  "intro": "经典重制，里昂远赴欧洲营救总统女儿，动作性很强。"
+ },
+ {
+  "id": 1196590,
+  "zh": "生化危机 8：村庄",
+  "en": "Resident Evil Village",
+  "genre": "生存恐怖",
+  "dev": "CAPCOM",
+  "year": "2021",
+  "intro": "伊森为寻找女儿闯入东欧村庄与城堡，第一人称视角。"
+ },
+ {
+  "id": 883710,
+  "zh": "生化危机 2 重制版",
+  "en": "Resident Evil 2",
+  "genre": "生存恐怖",
+  "dev": "CAPCOM",
+  "year": "2019",
+  "intro": "浣熊市警局，里昂与克莱尔双线，暴君追击令人难忘。"
+ },
+ {
+  "id": 413150,
+  "zh": "星露谷物语",
+  "en": "Stardew Valley",
+  "genre": "农场模拟",
+  "dev": "ConcernedApe",
+  "year": "2016",
+  "intro": "种田、钓鱼、社交、挖矿，治愈系，支持联机。"
+ },
+ {
+  "id": 105600,
+  "zh": "泰拉瑞亚",
+  "en": "Terraria",
+  "genre": "2D沙盒 · 冒险",
+  "dev": "Re-Logic",
+  "year": "2011",
+  "intro": "挖掘、建造、打 Boss，内容量巨大，免费更新了很多年。"
+ },
+ {
+  "id": 1145350,
+  "zh": "哈迪斯 2",
+  "en": "Hades II",
+  "genre": "肉鸽 · 动作",
+  "dev": "Supergiant Games",
+  "year": "2025",
+  "intro": "冥界公主墨利诺厄挑战时间泰坦克洛诺斯，前作全面进化。"
+ },
+ {
+  "id": 1145360,
+  "zh": "哈迪斯",
+  "en": "Hades",
+  "genre": "肉鸽 · 动作",
+  "dev": "Supergiant Games",
+  "year": "2020",
+  "intro": "冥王之子扎格列欧斯逃离冥界，剧情随每次死亡推进。"
+ },
+ {
+  "id": 367520,
+  "zh": "空洞骑士",
+  "en": "Hollow Knight",
+  "genre": "类银河恶魔城",
+  "dev": "Team Cherry",
+  "year": "2017",
+  "intro": "手绘风格的地下王国圣巢，难度与探索兼具。"
+ },
+ {
+  "id": 1030300,
+  "zh": "空洞骑士：丝之歌",
+  "en": "Hollow Knight: Silksong",
+  "genre": "类银河恶魔城",
+  "dev": "Team Cherry",
+  "year": "2025",
+  "intro": "空洞骑士续作，主角换成大黄蜂，动作更快更难。"
+ },
+ {
+  "id": 1426210,
+  "zh": "双人成行",
+  "en": "It Takes Two",
+  "genre": "双人合作 · 冒险",
+  "dev": "Hazelight",
+  "year": "2021",
+  "intro": "必须两人合作；买一份就能用好友通行证邀请朋友一起玩。"
+ },
+ {
+  "id": 2001120,
+  "zh": "双影奇境",
+  "en": "Split Fiction",
+  "genre": "双人合作 · 冒险",
+  "dev": "Hazelight",
+  "year": "2025",
+  "intro": "在科幻和奇幻两个世界间穿梭，同样支持好友通行证。"
+ },
+ {
+  "id": 289070,
+  "zh": "文明 6",
+  "en": "Sid Meier's Civilization VI",
+  "genre": "回合制策略",
+  "dev": "Firaxis Games",
+  "year": "2016",
+  "intro": "「再来一回合」的经典 4X，DLC 很多，打折时可以看合集。"
+ },
+ {
+  "id": 1295660,
+  "zh": "文明 7",
+  "en": "Sid Meier's Civilization VII",
+  "genre": "回合制策略",
+  "dev": "Firaxis Games",
+  "year": "2025",
+  "intro": "文明系列新作，引入时代更替和文明切换机制。"
+ },
+ {
+  "id": 1551360,
+  "zh": "极限竞速：地平线 5",
+  "en": "Forza Horizon 5",
+  "genre": "开放世界 · 竞速",
+  "dev": "Playground Games",
+  "year": "2021",
+  "intro": "墨西哥大地图，数百台车辆，单人联机都好玩。"
+ },
+ {
+  "id": 1593500,
+  "zh": "战神",
+  "en": "God of War",
+  "genre": "动作冒险",
+  "dev": "Santa Monica Studio",
+  "year": "2022",
+  "intro": "奎托斯父子的北欧之旅，一镜到底的叙事。"
+ },
+ {
+  "id": 2322010,
+  "zh": "战神：诸神黄昏",
+  "en": "God of War Ragnarök",
+  "genre": "动作冒险",
+  "dev": "Santa Monica Studio",
+  "year": "2024",
+  "intro": "北欧篇续作，诸神黄昏降临，战斗和规模全面升级。"
+ },
+ {
+  "id": 1817070,
+  "zh": "漫威蜘蛛侠 重制版",
+  "en": "Marvel's Spider-Man Remastered",
+  "genre": "开放世界 · 动作",
+  "dev": "Insomniac Games",
+  "year": "2022",
+  "intro": "在纽约荡蛛丝，战斗爽快，含三个 DLC 章节。"
+ },
+ {
+  "id": 2215430,
+  "zh": "对马岛之魂 导演剪辑版",
+  "en": "Ghost of Tsushima DC",
+  "genre": "开放世界 · 动作",
+  "dev": "Sucker Punch",
+  "year": "2024",
+  "intro": "蒙古入侵对马岛，武士刀战斗，画面极美；导演剪辑版含壹岐岛。"
+ },
+ {
+  "id": 2561580,
+  "zh": "地平线 零之曙光 重制版",
+  "en": "Horizon Zero Dawn Remastered",
+  "genre": "开放世界 · 动作RPG",
+  "dev": "Guerrilla Games",
+  "year": "2024",
+  "intro": "机械兽横行的后末日世界，重制版画面全面升级。"
+ },
+ {
+  "id": 1888930,
+  "zh": "最后生还者 第一部",
+  "en": "The Last of Us Part I",
+  "genre": "动作冒险 · 生存",
+  "dev": "Naughty Dog",
+  "year": "2023",
+  "intro": "乔尔和艾莉的末日旅程，叙事神作。"
+ },
+ {
+  "id": 3489700,
+  "zh": "剑星",
+  "en": "Stellar Blade",
+  "genre": "动作",
+  "dev": "SHIFT UP",
+  "year": "2025",
+  "intro": "韩国团队打造的高速近战动作游戏，弹反连段很爽。"
+ },
+ {
+  "id": 1462040,
+  "zh": "最终幻想 7 重制版 Intergrade",
+  "en": "FINAL FANTASY VII REMAKE INTERGRADE",
+  "genre": "动作RPG",
+  "dev": "Square Enix",
+  "year": "2021",
+  "intro": "米德加篇重制，含尤菲 DLC 章节。"
+ },
+ {
+  "id": 2515020,
+  "zh": "最终幻想 16",
+  "en": "FINAL FANTASY XVI",
+  "genre": "动作RPG",
+  "dev": "Square Enix",
+  "year": "2024",
+  "intro": "召唤兽对决，系列首次采用纯即时动作战斗。"
+ },
+ {
+  "id": 1687950,
+  "zh": "女神异闻录 5 皇家版",
+  "en": "Persona 5 Royal",
+  "genre": "回合制 · JRPG",
+  "dev": "ATLUS",
+  "year": "2022",
+  "intro": "怪盗团的校园生活加迷宫攻略，风格超酷。"
+ },
+ {
+  "id": 2679460,
+  "zh": "暗喻幻想",
+  "en": "Metaphor: ReFantazio",
+  "genre": "回合制 · JRPG",
+  "dev": "ATLUS",
+  "year": "2024",
+  "intro": "女神异闻录团队的奇幻新作，争夺王位的旅程。"
+ },
+ {
+  "id": 1627720,
+  "zh": "匹诺曹的谎言",
+  "en": "Lies of P",
+  "genre": "魂系 · 动作",
+  "dev": "NEOWIZ / Round8",
+  "year": "2023",
+  "intro": "黑暗版匹诺曹，被认为是最好的类魂游戏之一。"
+ },
+ {
+  "id": 1623730,
+  "zh": "幻兽帕鲁",
+  "en": "Palworld",
+  "genre": "开放世界 · 生存制作",
+  "dev": "Pocketpair",
+  "year": "2024",
+  "intro": "抓帕鲁、建基地、让它们打工战斗，联机很欢乐。"
+ },
+ {
+  "id": 1172620,
+  "zh": "盗贼之海",
+  "en": "Sea of Thieves",
+  "genre": "多人 · 海盗冒险",
+  "dev": "Rare",
+  "year": "2020",
+  "intro": "和朋友一起开船寻宝、打海战，越多人越好玩。"
+ },
+ {
+  "id": 381210,
+  "zh": "黎明杀机",
+  "en": "Dead by Daylight",
+  "genre": "非对称多人 · 恐怖",
+  "dev": "Behaviour Interactive",
+  "year": "2016",
+  "intro": "1 名杀手对 4 名逃生者的猫鼠游戏。"
+ },
+ {
+  "id": 227300,
+  "zh": "欧洲卡车模拟 2",
+  "en": "Euro Truck Simulator 2",
+  "genre": "驾驶模拟",
+  "dev": "SCS Software",
+  "year": "2012",
+  "intro": "在欧洲开大卡车送货，解压神作，地图 DLC 很多。"
+ },
+ {
+  "id": 1771300,
+  "zh": "天国：拯救 2",
+  "en": "Kingdom Come: Deliverance II",
+  "genre": "开放世界 · RPG",
+  "dev": "Warhorse Studios",
+  "year": "2025",
+  "intro": "15 世纪波西米亚的写实中世纪，沉浸感极强。"
+ },
+ {
+  "id": 1903340,
+  "zh": "光与影：33 号远征队",
+  "en": "Clair Obscur: Expedition 33",
+  "genre": "回合制 · RPG",
+  "dev": "Sandfall Interactive",
+  "year": "2025",
+  "intro": "美好年代法式奇幻，回合制加实时闪避格挡。"
+ },
+ {
+  "id": 1850570,
+  "zh": "死亡搁浅 导演剪辑版",
+  "en": "DEATH STRANDING DIRECTOR'S CUT",
+  "genre": "动作冒险",
+  "dev": "KOJIMA PRODUCTIONS",
+  "year": "2022",
+  "intro": "小岛秀夫作品，背着货物穿越荒野重新连接美国。"
+ },
+ {
+  "id": 1364780,
+  "zh": "街头霸王 6",
+  "en": "Street Fighter 6",
+  "genre": "格斗",
+  "dev": "CAPCOM",
+  "year": "2023",
+  "intro": "现代操作降低门槛，含单人「世界巡回」模式。"
+ },
+ {
+  "id": 1778820,
+  "zh": "铁拳 8",
+  "en": "TEKKEN 8",
+  "genre": "格斗",
+  "dev": "Bandai Namco",
+  "year": "2024",
+  "intro": "3D 格斗，新的热能系统鼓励进攻。"
+ },
+ {
+  "id": 1326470,
+  "zh": "森林之子",
+  "en": "Sons of the Forest",
+  "genre": "生存 · 恐怖",
+  "dev": "Endnight Games",
+  "year": "2024",
+  "intro": "在小岛上求生建造、对抗食人族，可联机。"
+ },
+ {
+  "id": 252490,
+  "zh": "腐蚀",
+  "en": "Rust",
+  "genre": "多人生存 · PVP",
+  "dev": "Facepunch Studios",
+  "year": "2018",
+  "intro": "硬核 PVP 生存，开局只有一块石头。"
+ },
+ {
+  "id": 534380,
+  "zh": "消逝的光芒 2",
+  "en": "Dying Light 2",
+  "genre": "开放世界 · 动作生存",
+  "dev": "Techland",
+  "year": "2022",
+  "intro": "跑酷加打丧尸，白天探索、夜晚逃命。"
+ },
+ {
+  "id": 3159330,
+  "zh": "刺客信条：影",
+  "en": "Assassin's Creed Shadows",
+  "genre": "开放世界 · 动作RPG",
+  "dev": "Ubisoft Quebec",
+  "year": "2025",
+  "intro": "日本战国时代，忍者奈绪江与武士弥助双主角。"
+ },
+ {
+  "id": 553850,
+  "zh": "绝地潜兵 2",
+  "en": "HELLDIVERS 2",
+  "genre": "多人合作 · 射击",
+  "dev": "Arrowhead",
+  "year": "2024",
+  "intro": "四人合作为「超级地球」传播民主，友伤很欢乐。"
+ },
+ {
+  "id": 526870,
+  "zh": "幸福工厂",
+  "en": "Satisfactory",
+  "genre": "工厂建造",
+  "dev": "Coffee Stain Studios",
+  "year": "2024",
+  "intro": "第一人称在外星球搭建自动化流水线。"
+ }
+]
