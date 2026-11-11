@@ -495,333 +495,978 @@
   "intro": "第一人称在外星球搭建自动化流水线。"
  },
  {
-  "id": 1238810
- },
- {
-  "id": 2807960
- },
- {
-  "id": 489830
- },
- {
-  "id": 377160
- },
- {
-  "id": 1716740
- },
- {
-  "id": 22380
- },
- {
-  "id": 2420110
- },
- {
-  "id": 2124490
- },
- {
-  "id": 1693980
- },
- {
-  "id": 2183900
- },
- {
-  "id": 1817190
- },
- {
-  "id": 2651280
- },
- {
-  "id": 1659420
- },
- {
-  "id": 2531310
- },
- {
-  "id": 1817230
- },
- {
-  "id": 1888160
- },
- {
-  "id": 2138330
- },
- {
-  "id": 1144200
- },
- {
-  "id": 976730
- },
- {
-  "id": 1966720
- },
- {
-  "id": 739630
- },
- {
-  "id": 892970
- },
- {
-  "id": 2399830
- },
- {
-  "id": 346110
- },
- {
-  "id": 1794680
- },
- {
-  "id": 646570
- },
- {
-  "id": 2868840
- },
- {
-  "id": 588650
- },
- {
-  "id": 250900
- },
- {
-  "id": 504230
- },
- {
-  "id": 268910
- },
- {
-  "id": 1057090
- },
- {
-  "id": 322330
- },
- {
-  "id": 264710
- },
- {
-  "id": 281990
- },
- {
-  "id": 394360
- },
- {
-  "id": 1158310
- },
- {
-  "id": 236850
- },
- {
-  "id": 255710
- },
- {
-  "id": 949230
- },
- {
-  "id": 294100
- },
- {
-  "id": 427520
- },
- {
-  "id": 1366540
- },
- {
-  "id": 1062090
- },
- {
-  "id": 1142710
- },
- {
-  "id": 779340
- },
- {
-  "id": 1517290
- },
- {
-  "id": 1238840
- },
- {
-  "id": 1601580
- },
- {
-  "id": 323190
- },
- {
-  "id": 524220
- },
- {
-  "id": 1113560
- },
- {
-  "id": 601150
- },
- {
-  "id": 1971870
- },
- {
-  "id": 1384160
- },
- {
-  "id": 1868140
- },
- {
-  "id": 2379780
- },
- {
-  "id": 2440510
- },
- {
-  "id": 244210
- },
- {
-  "id": 805550
- },
- {
-  "id": 1222680
- },
- {
-  "id": 1846380
- },
- {
-  "id": 2369390
- },
- {
-  "id": 552520
- },
- {
-  "id": 2208920
- },
- {
-  "id": 812140
- },
- {
-  "id": 582160
- },
- {
-  "id": 1088850
- },
- {
-  "id": 1332010
- },
- {
-  "id": 1150690
- },
- {
-  "id": 753640
- },
- {
-  "id": 1092790
- },
- {
-  "id": 1222140
- },
- {
-  "id": 1325200
- },
- {
-  "id": 485510
- },
- {
-  "id": 1340990
- },
- {
-  "id": 2694490
- },
- {
-  "id": 2344520
- },
- {
-  "id": 2054970
- },
- {
-  "id": 1172380
- },
- {
-  "id": 1774580
- },
- {
-  "id": 1259420
- },
- {
-  "id": 1282100
- },
- {
-  "id": 1295510
- },
- {
-  "id": 638970
- },
- {
-  "id": 1235140
- },
- {
-  "id": 2072450
- },
- {
-  "id": 1805480
- },
- {
-  "id": 2058190
- },
- {
-  "id": 1203620
- },
- {
-  "id": 1845910
- },
- {
-  "id": 1328670
- },
- {
-  "id": 620
- },
- {
-  "id": 220
- },
- {
-  "id": 546560
- },
- {
-  "id": 550
- },
- {
-  "id": 4000
- },
- {
-  "id": 945360
- },
- {
-  "id": 548430
- },
- {
-  "id": 1604030
- },
- {
-  "id": 2161700
- },
- {
-  "id": 1382330
- },
- {
-  "id": 1113000
- },
- {
-  "id": 952060
- },
- {
-  "id": 418370
- },
- {
-  "id": 2909400
- },
- {
-  "id": 39210
- },
- {
-  "id": 1361210
- },
- {
-  "id": 397540
- },
- {
-  "id": 1286680
+  "id": 1238810,
+  "zh": "战地风云 5",
+  "intro": "这就是终极《战地风云 5》体验。用完整的武器、载具和配备武器库以及第 1 年和第 2 年最棒的自定义内容体验人类历史上规模最大的冲突。",
+  "genre": "动作",
+  "dev": "DICE",
+  "year": "2020",
+  "en": "Battlefield™ V"
+ },
+ {
+  "id": 2807960,
+  "zh": "战地风云™ 6",
+  "intro": "尽享终极全面战争体验。在坦克、战斗机和大量武器横行的战场上，最致命的武器就是你的小队。",
+  "genre": "动作",
+  "dev": "Battlefield Studios",
+  "year": "2025",
+  "en": "Battlefield™ 6"
+ },
+ {
+  "id": 489830,
+  "zh": "The Elder Scrolls V: Skyrim Special Edition",
+  "intro": "荣获超过200项年度游戏大奖的《The Elder Scrolls V: Skyrim》推出特别版，以令人惊叹的细致画面带来史诗奇幻巨作。特别版内含大获好评的主游戏、附加内容，还有",
+  "genre": "角色扮演",
+  "dev": "Bethesda Game Studios",
+  "year": "2016",
+  "en": "The Elder Scrolls V: Skyrim Special Edition"
+ },
+ {
+  "id": 377160,
+  "zh": "Fallout 4",
+  "intro": "《Fallout 4》由屡获殊荣的《Starfield》与《The Elder Scrolls V: Skyrim》创作团队Bethesda Game Studios倾力打造。它不",
+  "genre": "角色扮演",
+  "dev": "Bethesda Game Studios",
+  "year": "2015",
+  "en": "Fallout 4"
+ },
+ {
+  "id": 1716740,
+  "zh": "Starfield",
+  "intro": "《Starfield》是由载誉无数、曾为大家带来《The Elder Scrolls V: Skyrim》和《Fallout 4》的Bethesda Game Studios睽违2",
+  "genre": "角色扮演",
+  "dev": "Bethesda Game Studios",
+  "year": "2023",
+  "en": "Starfield"
+ },
+ {
+  "id": 22380,
+  "zh": "Fallout: New Vegas",
+  "intro": "Welcome to Vegas. New Vegas. Enjoy your stay!",
+  "genre": "动作 · 角色扮演",
+  "dev": "Obsidian Entertainment",
+  "year": "2010",
+  "en": "Fallout: New Vegas"
+ },
+ {
+  "id": 2420110,
+  "zh": "《地平线 西之绝境™》完整版",
+  "intro": "体验磅礴巨作《地平线 西之绝境™》完整版，包含额外内容和《炙炎海岸》资料片。 《炙炎海岸》追加内容包含了埃洛伊的冒险之旅的额外内容，包括在一个美丽却危险的新地区展开的全新剧情、角色",
+  "genre": "动作 · 角色扮演",
+  "dev": "Guerrilla",
+  "year": "2024",
+  "en": "Horizon Forbidden West™ Complete Edition"
+ },
+ {
+  "id": 2124490,
+  "zh": "SILENT HILL 2",
+  "intro": "收到已过世的妻子玛丽寄来的信，詹姆斯借机来到充满回忆的城镇「寂静岭」。 但是市街却深锁于浓雾之中，变成诡异生物徘徊的鬼城。 和怪物战斗并解谜的同时，在城镇中探索妻子蛛丝马迹的『SI",
+  "genre": "动作 · 冒险",
+  "dev": "Bloober Team SA",
+  "year": "2024",
+  "en": "SILENT HILL 2"
+ },
+ {
+  "id": 1693980,
+  "zh": "死亡空间",
+  "intro": "科幻生存恐怖经典作品宣告回归，完全重建，旨在为玩家提供更身临其境的体验，包括视觉、音效和游戏性改进，同时尽力忠实地还原初版游戏惊险的视觉效果。",
+  "genre": "动作 · 冒险",
+  "dev": "Motive",
+  "year": "2023",
+  "en": "Dead Space"
+ },
+ {
+  "id": 2183900,
+  "zh": "Warhammer 40,000: 星际战士2",
+  "intro": "体验星际战士的超人技能和残暴手段。利用致命能力和毁灭性武器消灭无穷无尽的泰伦虫群。选择单人或多人模式，在恢弘的第三人称战斗中保卫帝国。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Saber Interactive",
+  "year": "2024",
+  "en": "Warhammer 40,000: Space Marine 2"
+ },
+ {
+  "id": 1817190,
+  "zh": "Marvel’s Spider-Man: Miles Morales",
+  "intro": "在《漫威蜘蛛侠》重制版发生的事件过后，少年迈尔斯·墨拉莱斯一边努力适应新家的生活，一边追随导师彼得·帕克的脚步，成为新一代的蜘蛛侠。然而，当一场激烈的权力斗争威胁到他的家园时，迈尔",
+  "genre": "动作 · 冒险",
+  "dev": "Insomniac Games",
+  "year": "2022",
+  "en": "Marvel’s Spider-Man: Miles Morales"
+ },
+ {
+  "id": 2651280,
+  "zh": "Marvel's Spider-Man 2",
+  "intro": "Be Greater. Together. 在广受好评的《Spider-Man》续作PC版的全新激动人心的篇章中，共生体的惊人力量迫使彼得·帕克和迈尔斯·墨拉莱斯身陷绝望的战斗之中",
+  "genre": "动作 · 冒险",
+  "dev": "Insomniac Games",
+  "year": "2025",
+  "en": "Marvel's Spider-Man 2"
+ },
+ {
+  "id": 1659420,
+  "zh": "UNCHARTED™: 盗贼传奇合辑",
+  "intro": "《UNCHARTED: 盗贼传奇合辑》提供了游玩获奖无数开发团队Naughty Dog旗下作品的绝佳方式，玩家能享受此工作室最惊险刺激的两部冒险，且皆以专为PC打造的强化功能进行重",
+  "genre": "冒险",
+  "dev": "Naughty Dog LLC",
+  "year": "2022",
+  "en": "UNCHARTED™: Legacy of Thieves Collection"
+ },
+ {
+  "id": 2531310,
+  "zh": "The Last of Us™ Part II Remastered",
+  "intro": "体验这个荣获超过300项年度最佳游戏奖项肯定的作品，现已登陆PC。通过强化的图形效果、Roguelike生存体验“赴死之旅”等游戏模式以及更多其他内容，探索艾莉和埃比的故事。",
+  "genre": "动作 · 冒险",
+  "dev": "Naughty Dog LLC",
+  "year": "2025",
+  "en": "The Last of Us™ Part II Remastered"
+ },
+ {
+  "id": 1817230,
+  "zh": "Hi-Fi RUSH",
+  "intro": "在「街机挑战！更新！」中，通过两种新游戏模式测试自己的能耐，找出新奖励，探索一些秘密！ 跟着梦想成为摇滚巨星的阿茶，还有他的杂牌军盟友一起感受音乐节拍，在一切都与音乐同步的世界里反",
+  "genre": "动作",
+  "dev": "Tango Gameworks",
+  "year": "2023",
+  "en": "Hi-Fi RUSH"
+ },
+ {
+  "id": 1888160,
+  "zh": "机战佣兵™VI 境界天火™",
+  "intro": "《机战佣兵™VI 境界天火™》是万代南梦宫娱乐与FromSoftware运用历经多款动作游戏开发中累积的知识与经验，重新审视《机战佣兵》系列游戏概念后诞生的全新动作游戏。",
+  "genre": "动作",
+  "dev": "FromSoftware, Inc.",
+  "year": "2023",
+  "en": "ARMORED CORE™ VI FIRES OF RUBICON™"
+ },
+ {
+  "id": 2138330,
+  "zh": "《赛博朋克 2077：往日之影》",
+  "intro": "《往日之影》是开放世界动作冒险角色扮演游戏《赛博朋克 2077》的全新谍战悬疑风格资料片。玩家扮演经过义体强化的雇佣兵 V，和秘密特工所罗门·李德一起，共同解开一片由忠诚、背叛，以",
+  "genre": "角色扮演",
+  "dev": "CD PROJEKT RED",
+  "year": "2023",
+  "en": "Cyberpunk 2077: Phantom Liberty"
+ },
+ {
+  "id": 1144200,
+  "zh": "Ready or Not",
+  "intro": "洛斯苏埃诺斯市——LSPD报告称，泛洛斯苏埃诺斯地区的暴力犯罪事件急剧增加。警局已派遣SWAT小队应对包括人质危机、炸弹威胁、嫌犯固守在内的各类高危情形。建议广大市民非必要不外出。",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "VOID Interactive",
+  "year": "2023",
+  "en": "Ready or Not"
+ },
+ {
+  "id": 976730,
+  "zh": "Halo: The Master Chief Collection",
+  "intro": "士官长横跨 6 款游戏的经典英雄旅程，现在合而为一推出 PC 版。无论您是长期支持的粉丝，或是第一次与斯巴达战士 117 打照面，《光环：士官长合集》绝对能满足您，提供最棒的光环体",
+  "genre": "动作",
+  "dev": "343 Industries",
+  "year": "2019",
+  "en": "Halo: The Master Chief Collection"
+ },
+ {
+  "id": 1966720,
+  "zh": "Lethal Company",
+  "intro": "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Zeekerss",
+  "year": "2023",
+  "en": "Lethal Company"
+ },
+ {
+  "id": 739630,
+  "zh": "Phasmophobia 恐鬼症",
+  "intro": "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on th",
+  "genre": "动作 · 独立 · 抢先体验",
+  "dev": "Kinetic Games",
+  "year": "2020",
+  "en": "Phasmophobia"
+ },
+ {
+  "id": 892970,
+  "zh": "Valheim: 英灵神殿",
+  "intro": "一款支持1–10名玩家的同时在线合作的探索生存游戏，背景设定在一个受维京文化启发、程序生成的神话世界中。战斗、建造并征服你的旅程，谱写一段足以获得奥丁眷顾的传奇史诗吧！",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Iron Gate AB",
+  "year": "2026",
+  "en": "Valheim"
+ },
+ {
+  "id": 2399830,
+  "zh": "方舟: 生存飞升",
+  "intro": "《方舟》采用虚幻引擎 5 重新设计，并融入了下一代电子游戏技术！组建一个部落, 驯养和繁殖数百种恐龙和其他原始生物，探索、制作、建造，并一路进发至食物链的顶端. 快来加入这场新的冒",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Studio Wildcard",
+  "year": "2023",
+  "en": "ARK: Survival Ascended"
+ },
+ {
+  "id": 346110,
+  "zh": "ARK: Survival Evolved",
+  "intro": "由虚幻4引擎打造的一款多人在线生存竞技网游，在一个超高自由度的开放世界里，可以体验采集、制造、打猎、收获、建造、研究以及驯服恐龙等超多自由内容，感受酷热白昼、冰冷夜晚的动态天气系统",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Studio Wildcard",
+  "year": "2017",
+  "en": "ARK: Survival Evolved"
+ },
+ {
+  "id": 1794680,
+  "zh": "Vampire Survivors - 吸血鬼幸存者",
+  "intro": "来猎杀暗夜的魔物吧！杀出重围，迎来胜利的黎明！ Vampire Survivors是一款结合了哥特式恐怖和肉鸽元素的休闲游戏，通过一次次的选择让角色越变越强，身处怪物的重重包围也无",
+  "genre": "动作 · 休闲 · 独立",
+  "dev": "poncle",
+  "year": "2022",
+  "en": "Vampire Survivors"
+ },
+ {
+  "id": 646570,
+  "zh": "Slay the Spire",
+  "intro": "我们将卡牌游戏与Roguelike游戏融为一体，制作出了这款最棒的单机组牌游戏。打造出独一无二的牌组、遇见无数离奇的生物、发现威力强大的遗物、去屠戮这座高塔吧！",
+  "genre": "独立 · 策略",
+  "dev": "Mega Crit",
+  "year": "2019",
+  "en": "Slay the Spire"
+ },
+ {
+  "id": 2868840,
+  "zh": "Slay the Spire 2",
+  "intro": "标志性Rogue-like卡牌构筑游戏回归啦！在《杀戮尖塔2》中创建独特的卡组，遭遇各种奇异的生物，发掘含有无尽力量的遗物吧！",
+  "genre": "独立 · 策略 · 抢先体验",
+  "dev": "Mega Crit",
+  "year": "2026",
+  "en": "Slay the Spire 2"
+ },
+ {
+  "id": 588650,
+  "zh": "Dead Cells",
+  "intro": "《死亡细胞》是一款融合了Roguelite和银河恶魔城元素的平台动作游戏。你将在游戏中探索一个庞大而不断变化的城堡……当然，前提是你能在这款2D轻度魂系游戏中战胜那些拦路的强敌们。",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Motion Twin",
+  "year": "2018",
+  "en": "Dead Cells"
+ },
+ {
+  "id": 250900,
+  "zh": "The Binding of Isaac: Rebirth",
+  "intro": "The Binding of Isaac: Rebirth is a randomly generated action RPG shooter with heavy Rogue-",
+  "genre": "动作",
+  "dev": "Nicalis, Inc.",
+  "year": "2014",
+  "en": "The Binding of Isaac: Rebirth"
+ },
+ {
+  "id": 504230,
+  "zh": "Celeste",
+  "intro": "《Celeste》是《TowerFall》的制作者推出的又一力作。这款平台游戏节奏极为紧凑，玩家需要在 Madeline 攀登塞莱斯特山 (Celeste Mountain) 的旅",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Maddy Makes Games Inc.",
+  "year": "2018",
+  "en": "Celeste"
+ },
+ {
+  "id": 268910,
+  "zh": "Cuphead",
+  "intro": "《茶杯头》是一款以BOSS对战为主的经典横版卷轴类射击游戏。受上世纪30年代动画片的启发，游戏无论是画面还是音效都努力再现了当时的技术，如传统的赛璐璐手绘动画、水彩背景还有原声爵士",
+  "genre": "动作 · 独立",
+  "dev": "Studio MDHR Entertainment Inc.",
+  "year": "2017",
+  "en": "Cuphead"
+ },
+ {
+  "id": 1057090,
+  "zh": "Ori and the Will of the Wisps",
+  "intro": "在充满异域风情的广大世界中开启全新旅程，征服强大的敌人，解开极具挑战性的难题，在一次次任务中，揭开奥里的命运。",
+  "genre": "动作",
+  "dev": "Moon Studios GmbH",
+  "year": "2020",
+  "en": "Ori and the Will of the Wisps"
+ },
+ {
+  "id": 322330,
+  "zh": "饥荒联机版",
+  "intro": "在绝不妥协的荒野生存游戏《饥荒》的多人联机版中一起战斗、耕种、建设和探索吧。",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Klei Entertainment",
+  "year": "2016",
+  "en": "Don't Starve Together"
+ },
+ {
+  "id": 264710,
+  "zh": "Subnautica - 深海迷航",
+  "intro": "Descend into the depths of an alien underwater world filled with wonder and peril. Craft e",
+  "genre": "冒险 · 独立",
+  "dev": "Unknown Worlds Entertainment",
+  "year": "2018",
+  "en": "Subnautica"
+ },
+ {
+  "id": 281990,
+  "zh": "Stellaris",
+  "intro": "在这款由Paradox Development Studio精心打造的科幻大型战略游戏中，探索充满奇迹的浩瀚银河。与千奇百怪的外星种族互动、发现奇异新世界并体验其中令人意想不到的事",
+  "genre": "模拟 · 策略",
+  "dev": "Paradox Development Studio",
+  "year": "2016",
+  "en": "Stellaris"
+ },
+ {
+  "id": 394360,
+  "en": "Hearts of Iron IV"
+ },
+ {
+  "id": 1158310,
+  "zh": "Crusader Kings III",
+  "intro": "坠入爱河、投身争斗、策划计谋、成就宏图伟业，在大战略游戏《Crusader Kings III》中书写你的贵族传承。死亡不过是下一场开始——在这个精彩纷呈、跃然纸上的中世纪模拟世界",
+  "genre": "角色扮演 · 模拟 · 策略",
+  "dev": "Paradox Development Studio",
+  "year": "2020",
+  "en": "Crusader Kings III"
+ },
+ {
+  "id": 236850,
+  "zh": "Europa Universalis IV",
+  "intro": "以前所未见的自由、深度及历史真实性统治您的领土，最终称霸世界。撰写全新的世界历史，建立经久不衰的伟大帝国。",
+  "genre": "模拟 · 策略",
+  "dev": "Paradox Development Studio",
+  "year": "2013",
+  "en": "Europa Universalis IV"
+ },
+ {
+  "id": 255710,
+  "zh": "Cities: Skylines",
+  "intro": "《城市：天际线》是对经典城市模拟类游戏的现代演绎。该游戏引入了全新的游戏玩法元素，让玩家切身体会到创造和维持一座真正城市的兴奋和艰辛，同时扩展了城市建设体验中的一些经久不衰的主题。",
+  "genre": "模拟 · 策略",
+  "dev": "Colossal Order",
+  "year": "2015",
+  "en": "Cities: Skylines"
+ },
+ {
+  "id": 949230,
+  "zh": "《都市：天际线2》",
+  "intro": "见证一座城市拔地而起，亲手打造繁华都市。在深度模拟与栩栩如生的经济系统的支撑下，挑战创造力与问题解决能力的极限：永远有一张崭新的地图在《Cities: Skylines II》等待",
+  "genre": "模拟",
+  "dev": "Iceflake Studios",
+  "year": "2023",
+  "en": "Cities: Skylines II"
+ },
+ {
+  "id": 294100,
+  "zh": "边缘世界 RimWorld",
+  "intro": "由聪明的人工智能故事讲述者驱动的科幻殖民地模拟电脑游戏。通过模拟心理学、生态学、枪战、近战、气候、生物群落、外交、人际关系、艺术、医学、贸易等来生成故事。",
+  "genre": "独立 · 模拟 · 策略",
+  "dev": "Ludeon Studios",
+  "year": "2018",
+  "en": "RimWorld"
+ },
+ {
+  "id": 427520,
+  "zh": "Factorio",
+  "intro": "「异星工厂」Factorio 是一款2D生产建设模拟游戏，在这里你需要设计并建设出不同的自动生产流水线，不断生产出愈加复杂的工业品。尽情开动你的想象力，将传送带、机械臂、组装机等简",
+  "genre": "休闲 · 独立 · 模拟",
+  "dev": "Wube Software LTD.",
+  "year": "2020",
+  "en": "Factorio"
+ },
+ {
+  "id": 1366540,
+  "zh": "戴森球计划",
+  "intro": "浩瀚无垠的宇宙，未知的征程，作为戴森球计划的一名工程师，你将前往陌生的星系，建造戴森球。从一无所有白手起家，采集资源，规划设计生产线，逐步实现全自动化，将你的工厂从一个小作坊，发展",
+  "genre": "独立 · 模拟 · 策略",
+  "dev": "Youthcat Studio",
+  "year": "2021",
+  "en": "Dyson Sphere Program"
+ },
+ {
+  "id": 1062090,
+  "zh": "海狸浮生记 Timberborn",
+  "intro": "人类早已不复存在。在这个干旱和有毒废料肆虐的世界里，你的木造朋克海狸们的命运又将如何？这款沙盒城市建造游戏包含机智的动物、巧妙的垂直建筑、多样的水物理运用与地形改造。当然绝对少不了",
+  "genre": "独立 · 模拟 · 策略",
+  "dev": "Mechanistry",
+  "year": "2026",
+  "en": "Timberborn"
+ },
+ {
+  "id": 1142710,
+  "zh": "全面战争：战锤3",
+  "intro": "《Total War: WARHAMMER》三部曲的终末已经到来。集结你的军力，踏入混沌魔域！在这个变幻莫测的恐怖维度中，世界的命运将尘埃落定。于是你会诛灭那些恶魔…还是转而驾驭他",
+  "genre": "动作 · 策略",
+  "dev": "CREATIVE ASSEMBLY",
+  "year": "2022",
+  "en": "Total War: WARHAMMER III"
+ },
+ {
+  "id": 779340,
+  "zh": "全面战争：三国",
+  "intro": "通过扣人心弦的回合制帝国经营与即时战斗，将古代中国统一在你的麾下运用“关系”系统与外交手段缔结同盟，组建由数百种独特步兵、骑兵和战争器械部队构成的强盛大军",
+  "genre": "动作 · 策略",
+  "dev": "CREATIVE ASSEMBLY",
+  "year": "2019",
+  "en": "Total War: THREE KINGDOMS"
+ },
+ {
+  "id": 1517290,
+  "zh": "战地风云™ 2042",
+  "intro": "《战地风云™ 2042》是一款第一人称射击游戏，本作将带领玩家重返该系列标志性的全面战争。",
+  "genre": "动作 · 冒险 · 休闲",
+  "dev": "DICE",
+  "year": "2021",
+  "en": "Battlefield™ 2042"
+ },
+ {
+  "id": 1238840,
+  "zh": "Battlefield™ 1",
+  "intro": "加入团结强大的 Battlefield 社区，在史诗规模的团队多人战斗中或通过战争故事构成的战役中体验全面战争的黎明。",
+  "genre": "动作 · 大型多人在线",
+  "dev": "DICE",
+  "year": "2020",
+  "en": "Battlefield™ 1"
+ },
+ {
+  "id": 1601580,
+  "zh": "冰汽时代2",
+  "intro": "《冰汽时代2》设定于末日暴风雪肆虐地球 30 年后的社会。你要在这款社会生存游戏中，发展、扩张并推进你的城市。在游戏中，你不仅要面对来自寒冬永无止境的威胁，还要与议会厅中的不同派系",
+  "genre": "模拟 · 策略",
+  "dev": "11 bit studios",
+  "year": "2024",
+  "en": "Frostpunk 2"
+ },
+ {
+  "id": 323190,
+  "zh": "冰汽时代",
+  "intro": "《冰汽时代》是首款以社会生存为题材的游戏。作为世上最后一座城市的管理者，你必须对人民及里面的基础设施进行管理。你将会采取哪种决定来确保你的社会生存下去？当你被推到极限时，会采取什么",
+  "genre": "模拟 · 策略",
+  "dev": "11 bit studios",
+  "year": "2018",
+  "en": "Frostpunk"
+ },
+ {
+  "id": 524220,
+  "zh": "NieR:Automata™",
+  "intro": "《NieR:Automata》讲述了机器人 2B、9S 和 A2 的故事，以及他们为夺回遭强大机械生命体占领、由机器驱动的反乌托邦而进行的战斗。",
+  "genre": "动作 · 角色扮演",
+  "dev": "Square Enix",
+  "year": "2017",
+  "en": "NieR:Automata™"
+ },
+ {
+  "id": 1113560,
+  "zh": "NieR Replicant™ ver.1.22474487139...",
+  "intro": "《NieR Replicant ver.1.22474487139...》是以2010年4月发售的《NieR Replicant》为基础制作的强化版，描写2017年2月发售的《Ni",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Square Enix",
+  "year": "2021",
+  "en": "NieR Replicant™ ver.1.22474487139..."
+ },
+ {
+  "id": 601150,
+  "zh": "Devil May Cry 5",
+  "intro": "最强的恶魔猎人强势回归！动作游戏迷翘首以待，传说中的Stylish Action《Devil May Cry》终于復活！",
+  "genre": "动作",
+  "dev": "CAPCOM Co., Ltd.",
+  "year": "2019",
+  "en": "Devil May Cry 5"
+ },
+ {
+  "id": 1971870,
+  "zh": "真人快打 1 ",
+  "intro": "探索由火神刘康打造，并重生后的“真人快打™”宇宙。《真人快打™ 1》将以全新的战斗系统、游戏模式和必杀终结，开启本系列的新纪元！",
+  "genre": "动作",
+  "dev": "NetherRealm Studios",
+  "year": "2023",
+  "en": "Mortal Kombat 1"
+ },
+ {
+  "id": 1384160,
+  "zh": "GUILTY GEAR -STRIVE-",
+  "intro": "仿佛似手画2D动画的华丽表现，更加以进化升华。彻底的讲究终极的美丽，为您呈现最先端，最新时代映像的格斗游戏！",
+  "genre": "动作",
+  "dev": "Arc System Works",
+  "year": "2021",
+  "en": "GUILTY GEAR -STRIVE-"
+ },
+ {
+  "id": 1868140,
+  "zh": "潜水员戴夫 DAVE THE DIVER",
+  "intro": "欢迎访问以神秘蓝洞为背景的海洋冒险游戏【潜水员戴夫 DAVE THE DIVER】。 白天在美丽的大海里打鱼，晚上经营寿司店赚钱。 伴随着个性强的同事们的故事展开的海底谜团。神秘又",
+  "genre": "冒险 · 休闲 · 角色扮演",
+  "dev": "MINTROCKET",
+  "year": "2023",
+  "en": "DAVE THE DIVER"
+ },
+ {
+  "id": 2379780,
+  "zh": "Balatro",
+  "intro": "Balatro是一场循环不息的扑克之旅。在这款令人陶醉的策略构建游戏中，你将参与到非法牌局，发掘能够改变局势的小丑牌，引爆一系列令人血脉喷张、疯狂迸发的连锁效应。",
+  "genre": "休闲 · 独立 · 策略",
+  "dev": "LocalThunk",
+  "year": "2024",
+  "en": "Balatro"
+ },
+ {
+  "id": 2440510,
+  "zh": "Forza Motorsport 极限竞速",
+  "intro": "在职业赛中超越竞争对手。在多人游戏中与世界各地的选手比赛。驾驶500多辆赛车在27条世界著名赛道上一较高下 — 其中包括令人兴奋的纽博格林北环赛道！",
+  "genre": "竞速",
+  "dev": "Turn 10",
+  "year": "2023",
+  "en": "Forza Motorsport"
+ },
+ {
+  "id": 244210,
+  "zh": "神力科莎 Assetto Corsa",
+  "intro": "《神力科莎 Assetto Corsa》1.16版本推出了全新镭射扫描“Laguna Seca“赛道，7款全新车型，当中包括了备受期待的阿尔法·罗密欧Giulia Quadrifo",
+  "genre": "独立 · 竞速 · 模拟",
+  "dev": "Kunos Simulazioni",
+  "year": "2014",
+  "en": "Assetto Corsa"
+ },
+ {
+  "id": 805550,
+  "zh": "神力科莎：竞速 Assetto Corsa Competizione",
+  "intro": "Assetto Corsa Competizione是最新的宝珀GT系列赛官方授权游戏。该作优异的拟真水平能让玩家感受FIA GT3系列赛的独特氛围，游戏内有官方赛车手、车队、车辆",
+  "genre": "竞速 · 模拟 · 体育",
+  "dev": "Kunos Simulazioni",
+  "year": "2019",
+  "en": "Assetto Corsa Competizione"
+ },
+ {
+  "id": 1222680,
+  "zh": "《Need for Speed™ Heat",
+  "intro": "白天的喧嚣，夜晚的狂欢，尽在《Need for Speed™ Heat》豪华版，这是一款惊险刺激的街头赛车游戏，随着太阳落山，法律的界限也将逐渐模糊。",
+  "genre": "动作 · 冒险 · 竞速",
+  "dev": "Ghost Games",
+  "year": "2020",
+  "en": "Need for Speed™ Heat"
+ },
+ {
+  "id": 1846380,
+  "zh": "《极品飞车™：不羁》",
+  "intro": "争分夺秒，绝对不要失败。智胜警察，参加盛大赛事：Lakeshore 终极街头挑战大赛的每周排位赛。用精准调校的定制赛车装满您的车库，并用您的风格点亮街道。",
+  "genre": "动作 · 竞速",
+  "dev": "Criterion Games",
+  "year": "2022",
+  "en": "Need for Speed™ Unbound"
+ },
+ {
+  "id": 2369390,
+  "zh": "Far Cry® 6",
+  "intro": "在这款第一人称开放世界游击射击游戏中领导革命吧。使用自制武器，想尽一切办法展开行动，建立你的反抗军网络，推翻卡斯蒂约的掌控。",
+  "genre": "动作 · 冒险",
+  "dev": "Ubisoft Toronto",
+  "year": "2023",
+  "en": "Far Cry® 6"
+ },
+ {
+  "id": 552520,
+  "zh": "Far Cry® 5",
+  "intro": "在这款开放世界第一人称射击游戏中，挺身对抗狂热的邪教组织。你将投身激烈的战斗，解放敌对领地，招募忠诚的追随者与动物盟友，无论是单人作战还是双人联机，誓要解放希望郡。",
+  "genre": "动作 · 冒险",
+  "dev": "Ubisoft Montreal",
+  "year": "2018",
+  "en": "Far Cry® 5"
+ },
+ {
+  "id": 2208920,
+  "zh": "刺客信条：英灵殿",
+  "intro": "《刺客信条：英灵殿》是一款动作冒险游戏，您将在其中扮演一位从小在征战与荣耀的光辉故事中成长起来的维京战士。在英格兰的黑暗时代背景中探索美丽多变的开放世界。劫掠您的敌人，发展您的居民",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Ubisoft Montreal",
+  "year": "2022",
+  "en": "Assassin's Creed Valhalla"
+ },
+ {
+  "id": 812140,
+  "zh": "Assassin's Creed® Odyssey",
+  "intro": "在这款动作冒险游戏中，扬帆驶向古希腊，改变这个国度的命运。陆海激战，从流浪者蜕变成传奇人物，找出自己过往的秘密。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Ubisoft Quebec",
+  "year": "2018",
+  "en": "Assassin's Creed® Odyssey"
+ },
+ {
+  "id": 582160,
+  "zh": "刺客信条：起源",
+  "intro": "在这款动作冒险游戏中，尽情探索古埃及。挑战强敌、揭穿阴谋，探索刺客兄弟会的起源故事。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Ubisoft Montreal",
+  "year": "2017",
+  "en": "Assassin's Creed® Origins"
+ },
+ {
+  "id": 1088850,
+  "zh": "Marvel's Guardians of the Galaxy",
+  "intro": "通过全新演绎的《漫威银河护卫队》来一场穿越宇宙的狂野之旅。在这款冒险动作游戏中，身为星爵的你将与古灵精怪的护卫队员并肩作战，杀出层出不穷的火爆局面。你能行的！大概吧。",
+  "genre": "动作 · 冒险",
+  "dev": "Eidos-Montréal",
+  "year": "2021",
+  "en": "Marvel's Guardians of the Galaxy"
+ },
+ {
+  "id": 1332010,
+  "zh": "Stray",
+  "intro": "一只孤身离群的流浪猫迷失在了一座被遗忘的网络城市里，它必须解开一个古老的谜团才能逃离出去，找到回家的路。",
+  "genre": "冒险 · 独立",
+  "dev": "BlueTwelve Studio",
+  "year": "2022",
+  "en": "Stray"
+ },
+ {
+  "id": 1150690,
+  "zh": "OMORI",
+  "intro": "探索一个陌生的世界，邂逅丰富多彩的朋友与敌人们。当那个时刻到来时，你所选择的道路将会决定你的命运……或许也将决定他人的命运。",
+  "genre": "冒险 · 独立 · 角色扮演",
+  "dev": "OMOCAT, LLC",
+  "year": "2020",
+  "en": "OMORI"
+ },
+ {
+  "id": 753640,
+  "zh": "Outer Wilds",
+  "intro": "Outer Wilds再添一项大奖，被Giant Bomb、Polygon、Eurogamer和The Guardian评为“2019年度游戏”！备受赞誉、屡获大奖的Outer W",
+  "genre": "动作 · 冒险",
+  "dev": "Mobius Digital",
+  "year": "2020",
+  "en": "Outer Wilds"
+ },
+ {
+  "id": 1092790,
+  "zh": "邪恶冥刻",
+  "intro": "《邪恶冥刻Inscryption》是一部墨黑色卡片主题的冒险史诗，融合了Roguelike牌组构建、密室逃脱以及心理恐怖元素，为玩家献上一杯血腥的冰沙奶昔。比玩法更黑暗的，是卡牌上",
+  "genre": "冒险 · 独立 · 策略",
+  "dev": "Daniel Mullins Games",
+  "year": "2021",
+  "en": "Inscryption"
+ },
+ {
+  "id": 1222140,
+  "zh": "底特律：化身为人",
+  "intro": "在《底特律：化身为人》中，人类和机器人的命运都将掌握在您的手中，您将走进一个不远的未来，一个机器人具有比人类更高智慧的时代。您将体验到史上最为复杂的分支故事——您所作出的每个选择都",
+  "genre": "动作 · 冒险",
+  "dev": "Quantic Dream",
+  "year": "2020",
+  "en": "Detroit: Become Human"
+ },
+ {
+  "id": 1325200,
+  "zh": "仁王２ Complete Edition",
+  "intro": "本作是一款以恶贼嚣张跋扈、妖怪四处作乱的战国时代为舞台展开的黑暗战国动作角色扮演游戏。 加入全新的战斗方式“妖怪化”、外形邪恶丑陋的各路妖怪以及 由妖怪产生的“常暗”世界等众多新要",
+  "genre": "动作 · 角色扮演",
+  "dev": "KOEI TECMO GAMES CO., LTD.",
+  "year": "2021",
+  "en": "Nioh 2 – The Complete Edition"
+ },
+ {
+  "id": 485510,
+  "zh": "仁王 Complete Edition",
+  "intro": "以贼人嚣张跋扈，妖怪四处蠢动的幽玄日本战国时代为舞台的黑暗风格战国动作RPG，史实人物「三浦按针」为蓝本的金发碧眼武士「威廉」以及历经几番死斗的故事。除战国时代末期史实为基础外，实",
+  "genre": "动作 · 角色扮演",
+  "dev": "KOEI TECMO GAMES CO., LTD.",
+  "year": "2017",
+  "en": "Nioh: Complete Edition"
+ },
+ {
+  "id": 1340990,
+  "zh": "浪人崛起",
+  "intro": "本游戏由曾推出《仁王》和《NINJA GAIDEN》的资深工作室Team NINJA精心打造。进入这款以日本幕末时期为舞台的开放世界动作角色扮演游戏，在19世纪饱受战乱蹂躏的日本，",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "KOEI TECMO GAMES CO., LTD.",
+  "year": "2025",
+  "en": "Rise of the Ronin"
+ },
+ {
+  "id": 2694490,
+  "en": "Path of Exile 2"
+ },
+ {
+  "id": 2344520,
+  "zh": "《暗黑破坏神® IV》",
+  "intro": "进入《暗黑破坏神® IV》的世界，在捍卫庇护之地的战斗中，开启前所未有的动作 RPG 冒险。亲身体验备受赞誉的游戏剧情和全新赛季内容。",
+  "genre": "动作 · 冒险 · 休闲",
+  "dev": "Blizzard Entertainment, Inc.",
+  "year": "2023",
+  "en": "Diablo® IV"
+ },
+ {
+  "id": 2054970,
+  "zh": "Dragon's Dogma 2",
+  "intro": "能够响应玩家想像且丰富多彩的动作，以及即使是单人游玩也能享受「与他人一起冒险的乐趣」的游戏体验。 借助最新的画面、物理计算及人工智能，精心编织而成的王道幻想世界。这个世界充满着惊喜",
+  "genre": "动作 · 角色扮演",
+  "dev": "CAPCOM Co., Ltd.",
+  "year": "2024",
+  "en": "Dragon's Dogma 2"
+ },
+ {
+  "id": 1172380,
+  "zh": "《星球大战 绝地：陨落的武士团™》",
+  "intro": "在由Respawn Entertainment出品的第三人称动作冒险游戏《星球大战 绝地：陨落的武士团™》中，一场贯穿整个银河系的冒险正在酝酿。一名被抛弃的绝地学徒必须完成他的修行",
+  "genre": "动作 · 冒险",
+  "dev": "Respawn Entertainment",
+  "year": "2019",
+  "en": "STAR WARS Jedi: Fallen Order™"
+ },
+ {
+  "id": 1774580,
+  "zh": "星球大战 绝地：幸存者™",
+  "intro": "在《星球大战 绝地：幸存者™》，这款跨银河系第三人称动作冒险游戏中，卡尔·凯斯提斯的故事仍将继续。",
+  "genre": "动作 · 冒险",
+  "dev": "Respawn",
+  "year": "2023",
+  "en": "STAR WARS Jedi: Survivor™"
+ },
+ {
+  "id": 1259420,
+  "zh": "Days Gone",
+  "intro": "Ride and fight into a deadly, post pandemic America. Play as Deacon St. John, a drifter an",
+  "genre": "动作 · 冒险",
+  "dev": "Bend Studio",
+  "year": "2021",
+  "en": "Days Gone"
+ },
+ {
+  "id": 1282100,
+  "zh": "遗迹2",
+  "intro": "《Remnant II®》是畅销游戏《Remnant: From the Ashes》的续作。在本作中，人类幸存者将再次深陷可怕的世界，对抗新的邪恶怪物和神一般的敌人头目。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Gunfire Games",
+  "year": "2023",
+  "en": "REMNANT II®"
+ },
+ {
+  "id": 1295510,
+  "zh": "勇者斗恶龙XI S 寻觅逝去的时光 - Definitive Edition",
+  "intro": "Definitive Edition 包含备受好评的《勇者斗恶龙XI》，外加额外的剧情、管弦乐版的配乐、2D 模式以及更多内容！无论你是忠实的粉丝还是新的冒险家，这都将为你提供终极",
+  "genre": "冒险 · 角色扮演",
+  "dev": "Square Enix",
+  "year": "2020",
+  "en": "DRAGON QUEST® XI S: Echoes of an Elusive Age™ - Definitive Edition"
+ },
+ {
+  "id": 638970,
+  "zh": "人中之龙０　誓约的场所",
+  "intro": "世嘉传奇日本系列游戏终于登录PC。玩家将扮演年轻黑道成员桐生和真岛，在东京和大阪的街头大杀四方。近距离感受上世纪80年代的日本生活，不加限制的帧率和4K分辨率，给您带来与其他任何游",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Ryu Ga Gotoku Studio",
+  "year": "2018",
+  "en": "Yakuza 0"
+ },
+ {
+  "id": 1235140,
+  "zh": "人中之龙7　光与暗的去向　国际版",
+  "intro": "本作描绘新主角春日一番，在全新的舞台“横滨·伊势佐木异人町”与伙伴们一起咸鱼翻身，最终击碎强大的邪恶势力，体验到不负最新作之名的热血戏剧。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "RGG Studio",
+  "year": "2020",
+  "en": "Yakuza: Like a Dragon"
+ },
+ {
+  "id": 2072450,
+  "zh": "人中之龙８",
+  "intro": "从“人生低谷”东山再起的男人——春日一番，以及面临“人生最后”之战的男人——桐生一马。 由两位主角演绎的超大作RPG，系列至高的感人故事 。 战斗进化为更具策略性的“动态指令RPG",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "RGG Studio",
+  "year": "2024",
+  "en": "Like a Dragon: Infinite Wealth"
+ },
+ {
+  "id": 1805480,
+  "zh": "人中之龙 维新！极",
+  "intro": "由人中之龙工作室出品，不朽的名作《人中之龙 维新！》隆重推出简体中文版本！ 借助Unreal Engine而实现的精美画面，焕然一新的系列全明星阵容同台演绎，还有爽快感倍增的战斗系",
+  "genre": "动作 · 冒险",
+  "dev": "RGG Studio",
+  "year": "2023",
+  "en": "Like a Dragon: Ishin!"
+ },
+ {
+  "id": 2058190,
+  "zh": "审判之逝：湮灭的记忆",
+  "intro": "全世界翘首以盼！木村拓哉主演，《审判之眼》系列最新作！在全新的舞台——横滨，讲述曾为律师的侦探八神隆之的故事。 一起本看似寻常的案件审判，牵扯出充满谜团的复仇剧。故事的走向出乎所有",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "RGG Studio",
+  "year": "2022",
+  "en": "Lost Judgment"
+ },
+ {
+  "id": 1203620,
+  "zh": "雾锁王国 (Enshrouded)",
+  "intro": "《雾锁王国》是一款单人/合作生存动作RPG，在这里，你的自由与创造力将被摆在第一位。竭尽全力战胜蚕食薪谷王国的腐化瘴气：探索手工打造的瑰丽世界，揭开隐藏的秘密并披荆斩棘开辟道路，在",
+  "genre": "动作 · 冒险 · 独立",
+  "dev": "Keen Games GmbH",
+  "year": "2026",
+  "en": "Enshrouded"
+ },
+ {
+  "id": 1845910,
+  "zh": "龙腾世纪™: 影障守护者",
+  "intro": "在沉浸式单人 RPG 游戏《龙腾世纪™: 影障守护者》中，团结影障守护者，反抗诸神。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "BioWare",
+  "year": "2024",
+  "en": "Dragon Age™: The Veilguard"
+ },
+ {
+  "id": 1328670,
+  "zh": "《质量效应》传奇版",
+  "intro": "《质量效应》传奇版将包含单人基础内容及广受赞誉的《质量效应》《质量效应 2》及《质量效应 3》三部曲系列超过 40 款 DLC，更有多种促销武器、装甲，及各种组合包等你来拿——所有",
+  "genre": "动作 · 角色扮演",
+  "dev": "BioWare",
+  "year": "2021",
+  "en": "Mass Effect™ Legendary Edition"
+ },
+ {
+  "id": 620,
+  "zh": "Portal 2",
+  "intro": "“终身测试计划”现已升级，您可以为您自己或您的好友设计合作谜题！",
+  "genre": "动作 · 冒险",
+  "dev": "Valve",
+  "year": "2011",
+  "en": "Portal 2"
+ },
+ {
+  "id": 220,
+  "zh": "Half-Life 2",
+  "intro": "在被占领的 17 号城，戈登·弗里曼从沉睡中苏醒，他在爱莉克斯·凡斯的协助下，领导着人类的殊死抵抗。 赶紧体验这款具有里程碑意义的第一人称射击游戏吧，它所构建的沉浸式世界达到前所未",
+  "genre": "动作",
+  "dev": "Valve",
+  "year": "2004",
+  "en": "Half-Life 2"
+ },
+ {
+  "id": 546560,
+  "zh": "Half-Life: Alyx",
+  "intro": "Valve 携 VR 大作《半衰期：爱莉克斯》重磅回归《半衰期》系列。 这个战斗故事发生在《半衰期》和《半衰期2》之间，是与邪恶的外星种族联合军之间看似毫无胜算的较量。 扮演爱莉克",
+  "genre": "动作 · 冒险",
+  "dev": "Valve",
+  "year": "2020",
+  "en": "Half-Life: Alyx"
+ },
+ {
+  "id": 550,
+  "zh": "Left 4 Dead 2",
+  "intro": "Set in the zombie apocalypse, Left 4 Dead 2 is a co-operative action horror FPS takes you ",
+  "genre": "动作",
+  "dev": "Valve",
+  "year": "2009",
+  "en": "Left 4 Dead 2"
+ },
+ {
+  "id": 4000,
+  "zh": "Garry's Mod",
+  "intro": "Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We give you t",
+  "genre": "休闲 · 独立 · 模拟",
+  "dev": "Facepunch Studios",
+  "year": "2006",
+  "en": "Garry's Mod"
+ },
+ {
+  "id": 945360,
+  "zh": "Among Us",
+  "intro": "这是一款可以连线或本地游玩的派对游戏，4 到 15 名玩家相互合作与背叛... 一切都发生在太空之中！",
+  "genre": "休闲",
+  "dev": "Innersloth",
+  "year": "2018",
+  "en": "Among Us"
+ },
+ {
+  "id": 548430,
+  "zh": "深岩银河",
+  "intro": "《深岩银河》是一款多人合作类第一人称射击游戏，有着了不起的矮人、100% 可破坏的地形、由程序生成的洞穴以及无数的外星怪物。",
+  "genre": "动作",
+  "dev": "Ghost Ship Games",
+  "year": "2020",
+  "en": "Deep Rock Galactic"
+ },
+ {
+  "id": 1604030,
+  "zh": "夜族崛起",
+  "intro": "作为一只吸血鬼醒来。在附近的定居点狩猎鲜血，恢复力量。避开致命阳光的炙烤。建设您的城堡，在这个充满谜团，不断变化的开放世界里蓬勃发展。在线上寻觅友军，征服生者的土地。",
+  "genre": "动作 · 冒险 · 大型多人在线",
+  "dev": "Stunlock Studios",
+  "year": "2024",
+  "en": "V Rising"
+ },
+ {
+  "id": 2161700,
+  "zh": "女神异闻录３ Reload",
+  "intro": "《女神异闻录３》整装换新，登陆现行最新游戏平台！",
+  "genre": "冒险 · 角色扮演 · 策略",
+  "dev": "ATLUS",
+  "year": "2024",
+  "en": "Persona 3 Reload"
+ },
+ {
+  "id": 1382330,
+  "zh": "Persona® 5 Strikers",
+  "intro": "反击的时刻到了! 成为心之怪盗团，直面潜藏在日本中的邪恶。本应是与伙伴们快乐的夏季旅行，却与扭曲的现实一同发生剧变……揭露真相，夺回在事件中心的人们被囚禁的心灵！",
+  "genre": "动作 · 冒险",
+  "dev": "ATLUS",
+  "year": "2021",
+  "en": "Persona® 5 Strikers"
+ },
+ {
+  "id": 1113000,
+  "zh": "女神异闻录４ 黄金版",
+  "intro": "这是一个有关成长的故事，以陆续发生的连环谋杀案作为导火线，主角和他的朋友们踏上了一趟旅程。",
+  "genre": "角色扮演",
+  "dev": "ATLUS",
+  "year": "2020",
+  "en": "Persona 4 Golden"
+ },
+ {
+  "id": 952060,
+  "zh": "Resident Evil 3",
+  "intro": "不管逃到哪里也会被追至绝路。 浣熊市发生突如其来的生物灾害，更为危险的武器被投入到这个逐渐毁灭的城镇中…… 多重的危机，九死一生的惊险动作和重新构建的逃生剧情，一切超乎你的想象。 ",
+  "genre": "动作",
+  "dev": "CAPCOM Co., Ltd.",
+  "year": "2020",
+  "en": "Resident Evil 3"
+ },
+ {
+  "id": 418370,
+  "zh": "Resident Evil 7 Biohazard",
+  "intro": "于美国南部的一间被废置的农舍，腐烂的墙身渗透着一股恐怖及孤独的氛围。 「7」标志着全新的恐怖求生体验，以及玩家视觉切换为更骇人的「隔离视觉」模式。有赖RE工程部的努力，恐怖的写实感",
+  "genre": "动作 · 冒险",
+  "dev": "CAPCOM Co., Ltd.",
+  "year": "2017",
+  "en": "Resident Evil 7 Biohazard"
+ },
+ {
+  "id": 2909400,
+  "zh": "FINAL FANTASY VII REBIRTH",
+  "intro": "克劳德一行人脱离魔晄都市米德加，踏进广袤的世界展开旅程。 本作有全新的故事、在广阔世界中的自由冒险以及增进与伙伴间情谊的战斗， 带来继《FINAL FANTASY VII REMA",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Square Enix",
+  "year": "2025",
+  "en": "FINAL FANTASY VII REBIRTH"
+ },
+ {
+  "id": 39210,
+  "en": "FINAL FANTASY XIV Online"
+ },
+ {
+  "id": 1361210,
+  "zh": "战锤40K：暗潮",
+  "intro": "枪林弹雨，血雨腥风。在这款激烈残酷的动作射击游戏中，你将击杀无数嗜血凶恶的敌人，夺回巢都特提恩。《战锤40K：暗潮》是一款全新多人合作游戏，由曾开发《战锤：末世鼠疫》系列、屡获殊荣",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Fatshark",
+  "year": "2022",
+  "en": "Warhammer 40,000: Darktide"
+ },
+ {
+  "id": 397540,
+  "zh": "无主之地3",
+  "intro": "射击夺宝游戏的鼻祖回归了，为您带来无穷无尽的枪械和一场躁动无限的全新冒险旅途！扮演四位全新的秘藏猎人之一，在新世界中横行霸道并击败敌人吧！每一位都拥有颇具深度的技能树、能力以及自订",
+  "genre": "动作 · 角色扮演",
+  "dev": "Gearbox Software",
+  "year": "2020",
+  "en": "Borderlands 3"
+ },
+ {
+  "id": 1286680,
+  "zh": "小缇娜的奇幻之地",
+  "intro": "快来参加这场充满奇思妙想、神奇景观和高能武器的史诗冒险！摇出你专属的多职业英雄，战斗、寻宝，踏上阻止暴虐boss天龙魔君的征途。",
+  "genre": "动作 · 冒险 · 角色扮演",
+  "dev": "Gearbox Software",
+  "year": "2022",
+  "en": "Tiny Tina's Wonderlands"
  }
 ]
