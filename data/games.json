@@ -810,10 +810,6 @@
   "en": "Stellaris"
  },
  {
-  "id": 394360,
-  "en": "Hearts of Iron IV"
- },
- {
   "id": 1158310,
   "zh": "Crusader Kings III",
   "intro": "坠入爱河、投身争斗、策划计谋、成就宏图伟业，在大战略游戏《Crusader Kings III》中书写你的贵族传承。死亡不过是下一场开始——在这个精彩纷呈、跃然纸上的中世纪模拟世界",
@@ -1174,10 +1170,6 @@
   "en": "Rise of the Ronin"
  },
  {
-  "id": 2694490,
-  "en": "Path of Exile 2"
- },
- {
   "id": 2344520,
   "zh": "《暗黑破坏神® IV》",
   "intro": "进入《暗黑破坏神® IV》的世界，在捍卫庇护之地的战斗中，开启前所未有的动作 RPG 冒险。亲身体验备受赞誉的游戏剧情和全新赛季内容。",
@@ -1439,10 +1431,6 @@
   "en": "FINAL FANTASY VII REBIRTH"
  },
  {
-  "id": 39210,
-  "en": "FINAL FANTASY XIV Online"
- },
- {
   "id": 1361210,
   "zh": "战锤40K：暗潮",
   "intro": "枪林弹雨，血雨腥风。在这款激烈残酷的动作射击游戏中，你将击杀无数嗜血凶恶的敌人，夺回巢都特提恩。《战锤40K：暗潮》是一款全新多人合作游戏，由曾开发《战锤：末世鼠疫》系列、屡获殊荣",
@@ -1468,5 +1456,8 @@
   "dev": "Gearbox Software",
   "year": "2022",
   "en": "Tiny Tina's Wonderlands"
+ },
+ {
+  "id": 1790600
  }
 ]
