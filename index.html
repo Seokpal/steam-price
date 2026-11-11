@@ -76,6 +76,7 @@ a{color:#58a6ff;text-decoration:none}
     <div class="row">
       <input type="search" id="q" placeholder="搜索游戏名 / 类型 / 开发商">
       <select id="sort">
+        <option value="hot">按热门排序</option>
         <option value="diff">按差价排序</option>
         <option value="disc">按折扣排序</option>
         <option value="ua">乌克兰区价格低→高</option>
@@ -115,7 +116,7 @@ a{color:#58a6ff;text-decoration:none}
 </div>
 
 <script>
-let LAST="", DATA=[], META={}, IMG={}, CAP={}, CUR=[], SHOWN=0; const PAGE=40; SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
+let RANK={}, LAST="", DATA=[], META={}, IMG={}, CAP={}, CUR=[], SHOWN=0; const PAGE=40; SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
 const hue = id => (id*137.508)%360;
 async function load(){
   const [games, pr] = await Promise.all([
@@ -123,6 +124,8 @@ async function load(){
     fetch("data/prices.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json())]);
   LAST = pr.updated; RATE_DEFAULT = pr.rate?.UAH_CNY || 0.147; RATE_SRC = pr.rate?.src || "";
   SNAPSHOT = new Date(pr.updated).toLocaleString("zh-CN",{timeZone:"Asia/Tokyo",hour12:false}) + " (JST)";
+  // 热门度：手动精选的游戏和热销榜排前面（games.json 里自动收集的游戏按热销榜顺序）
+  games.forEach((g,i)=>{ RANK[g.id] = g.auto ? 1000+i : i; });
   for (const g of games){
     const p = pr.prices[g.id]; if(!p || (!p.ua && !p.cn)) continue;
     DATA.push([g.id,g.zh||g.en||("App "+g.id),g.en||"",...(p.ua||[null,null,0]),...(p.cn||[null,null,0])]);
@@ -165,7 +168,7 @@ function render(){
   if(filter==="cn") rs = rs.filter(r=>r.win==="cn");
   if(filter==="sale") rs = rs.filter(r=>r.ud>0||r.cd>0);
   const s = $("sort").value;
-  rs.sort((a,b)=> (a.win==="na")-(b.win==="na") || (s==="diff"?a.pct-b.pct : s==="disc"?Math.max(b.ud,b.cd)-Math.max(a.ud,a.cd) : s==="ua"?a.uaCny-b.uaCny : a.zh.localeCompare(b.zh,"zh")));
+  rs.sort((a,b)=> (a.win==="na")-(b.win==="na") || (s==="hot"?RANK[a.id]-RANK[b.id] : s==="diff"?a.pct-b.pct : s==="disc"?Math.max(b.ud,b.cd)-Math.max(a.ud,a.cd) : s==="ua"?a.uaCny-b.uaCny : a.zh.localeCompare(b.zh,"zh")));
   CUR = rs; SHOWN = 0;
   $("list").innerHTML = rs.length ? "" : `<div class="empty">没有符合条件的游戏</div>`;
   more();
