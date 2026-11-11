@@ -108,19 +108,19 @@ a{color:#58a6ff;text-decoration:none}
     <ul>
       <li>价格来源：Steam 官方商店接口 <code>store.steampowered.com/api/appdetails</code>（cc=ua / cc=cn），和 SteamDB 的数据源是同一个。SteamDB 本身没有公开接口，所以每款游戏都附了 SteamDB 链接，可以点进去看全区价格和史低。</li>
       <li>乌区价格按上方汇率折算成人民币后比较，差价在 ±3% 以内算"差不多"。</li>
-      <li>价格每 6 小时自动更新一次（时间见顶部），下单前请以 Steam 页面为准。</li>
+      <li>价格每小时自动从 Steam 更新一次，网页开着时也会自己刷新（时间见顶部），下单前请以 Steam 页面为准。</li>
     </ul>
   </div>
 </div>
 
 <script>
-let DATA=[], META={}, IMG={}, SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
+let LAST="", DATA=[], META={}, IMG={}, SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
 const hue = id => (id*137.508)%360;
 async function load(){
   const [games, pr] = await Promise.all([
     fetch("data/games.json",{cache:"no-store"}).then(r=>r.json()),
-    fetch("data/prices.json",{cache:"no-store"}).then(r=>r.json())]);
-  RATE_DEFAULT = pr.rate?.UAH_CNY || 0.147; RATE_SRC = pr.rate?.src || "";
+    fetch("data/prices.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json())]);
+  LAST = pr.updated; RATE_DEFAULT = pr.rate?.UAH_CNY || 0.147; RATE_SRC = pr.rate?.src || "";
   SNAPSHOT = new Date(pr.updated).toLocaleString("zh-CN",{timeZone:"Asia/Tokyo",hour12:false}) + " (JST)";
   for (const g of games){
     const p = pr.prices[g.id]; if(!p || (!p.ua && !p.cn)) continue;
@@ -208,6 +208,17 @@ $("q").addEventListener("input",render);
 $("sort").addEventListener("change",render);
 $("rate").addEventListener("input",e=>{const v=parseFloat(e.target.value); if(v>0){rate=v; try{localStorage.setItem("uaRate",v)}catch(_){} render();}});
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip"); if(!b) return; filter=b.dataset.f; document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c===b)); render();});
+// 网页开着时每 10 分钟、以及切回网页时，自动拉取最新价格
+async function refresh(){
+  try{
+    const pr = await fetch("data/prices.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json());
+    if(pr.updated === LAST) return;
+    DATA=[]; META={}; IMG={}; await load(); render();
+    $("meta").textContent = `价格更新于：${SNAPSHOT} · ${DATA.length} 款游戏 · 汇率 ${RATE_SRC}`;
+  }catch(e){}
+}
+setInterval(refresh, 10*60*1000);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden) refresh(); });
 init().catch(e=>{$("list").innerHTML=`<div class="empty">数据加载失败：${e.message}</div>`});
 </script>
 </body>

@@ -2,7 +2,7 @@ name: 更新 Steam 价格
 
 on:
   schedule:
-    - cron: "17 */6 * * *"   # 每 6 小时一次（UTC），打折季能及时看到变化
+    - cron: "7 * * * *"      # 每小时一次（GitHub 高峰期可能延迟十几分钟）
   workflow_dispatch: {}       # 也可以在 Actions 页面手动点 "Run workflow"
 
 permissions:
