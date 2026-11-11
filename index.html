@@ -102,19 +102,20 @@ a{color:#58a6ff;text-decoration:none}
   </div>
 
   <div id="list"></div>
+  <div id="moreBox" style="text-align:center;margin:12px 0;display:none"><button id="moreBtn" class="chip" style="padding:10px 18px">显示更多</button></div>
 
   <div class="panel note">
     <b>说明</b>
     <ul>
       <li>价格来源：Steam 官方商店接口 <code>store.steampowered.com/api/appdetails</code>（cc=ua / cc=cn），和 SteamDB 的数据源是同一个。SteamDB 本身没有公开接口，所以每款游戏都附了 SteamDB 链接，可以点进去看全区价格和史低。</li>
       <li>乌区价格按上方汇率折算成人民币后比较，差价在 ±3% 以内算"差不多"。</li>
-      <li>价格每小时自动从 Steam 更新一次，网页开着时也会自己刷新（时间见顶部），下单前请以 Steam 页面为准。</li>
+      <li>游戏库每天自动收集（Steam 热销榜、两区所有打折游戏、在线人数榜），价格每小时自动从 Steam 更新一次，网页开着时也会自己刷新（时间见顶部），下单前请以 Steam 页面为准。</li>
     </ul>
   </div>
 </div>
 
 <script>
-let LAST="", DATA=[], META={}, IMG={}, SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
+let LAST="", DATA=[], META={}, IMG={}, CAP={}, CUR=[], SHOWN=0; const PAGE=40; SNAPSHOT="", RATE_DEFAULT=0.147, RATE_SRC="";
 const hue = id => (id*137.508)%360;
 async function load(){
   const [games, pr] = await Promise.all([
@@ -126,7 +127,7 @@ async function load(){
     const p = pr.prices[g.id]; if(!p || (!p.ua && !p.cn)) continue;
     DATA.push([g.id,g.zh||g.en||("App "+g.id),g.en||"",...(p.ua||[null,null,0]),...(p.cn||[null,null,0])]);
     META[g.id]=[g.genre||"",g.dev||"",g.year||"",g.intro||""];
-    IMG[g.id]=p.img;
+    IMG[g.id]=p.img; CAP[g.id]=g.cap||"";
   }
 }
 let rate = 0.147, filter = "all";
@@ -165,7 +166,9 @@ function render(){
   if(filter==="sale") rs = rs.filter(r=>r.ud>0||r.cd>0);
   const s = $("sort").value;
   rs.sort((a,b)=> (a.win==="na")-(b.win==="na") || (s==="diff"?a.pct-b.pct : s==="disc"?Math.max(b.ud,b.cd)-Math.max(a.ud,a.cd) : s==="ua"?a.uaCny-b.uaCny : a.zh.localeCompare(b.zh,"zh")));
-  $("list").innerHTML = rs.length ? rs.map(card).join("") : `<div class="empty">没有符合条件的游戏</div>`;
+  CUR = rs; SHOWN = 0;
+  $("list").innerHTML = rs.length ? "" : `<div class="empty">没有符合条件的游戏</div>`;
+  more();
 }
 
 function card(r){
@@ -182,11 +185,10 @@ function card(r){
   const maxD = Math.max(r.ud,r.cd);
   const bannerSale = maxD ? `<span class="bsale">🔥 打折中 ${r.ud&&r.cd&&r.ud!==r.cd?`乌区${zhe(r.ud)} / 国区${zhe(r.cd)}`:zhe(maxD)}</span>` : "";
   const m = META[r.id] || ["","","",""];
-  if(!m[3] && !m[0]) m[3]="（简介将在下次自动更新时从 Steam 抓取）";
   const h = hue(r.id);
   return `<div class="game">
     <div class="banner" style="background:linear-gradient(120deg,hsl(${h},55%,28%),hsl(${(h+40)%360},60%,45%))">
-      <img loading="lazy" alt="" src="${IMG[r.id]||`https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${r.id}/header.jpg`}" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
+      <img loading="lazy" alt="" src="${IMG[r.id]||`https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${r.id}/header.jpg`}" onload="this.parentNode.classList.add('has-img')" onerror="imgErr(this,${r.id})">
       ${badge}${bannerSale}<span class="yr">${m[2]}</span>
       <div class="bt">${r.zh}</div><div class="be">${r.en}</div>
     </div>
@@ -204,7 +206,18 @@ function card(r){
   </div>`;
 }
 
-$("q").addEventListener("input",render);
+function more(){
+  const next = CUR.slice(SHOWN, SHOWN+PAGE);
+  $("list").insertAdjacentHTML("beforeend", next.map(card).join(""));
+  SHOWN += next.length;
+  $("moreBox").style.display = SHOWN < CUR.length ? "" : "none";
+  $("moreBtn").textContent = `显示更多（还有 ${CUR.length-SHOWN} 款）`;
+}
+function imgErr(el,id){ if(!el.dataset.f && CAP[id]){ el.dataset.f=1; el.src=CAP[id]; } else el.remove(); }
+let qT; $("q").addEventListener("input",()=>{ clearTimeout(qT); qT=setTimeout(render,200); });
+$("moreBtn").addEventListener("click",more);
+try{ new IntersectionObserver(es=>{ if(es[0].isIntersecting && SHOWN<CUR.length) more(); },{rootMargin:"600px"}).observe($("moreBox")); }catch(e){}
+
 $("sort").addEventListener("change",render);
 $("rate").addEventListener("input",e=>{const v=parseFloat(e.target.value); if(v>0){rate=v; try{localStorage.setItem("uaRate",v)}catch(_){} render();}});
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip"); if(!b) return; filter=b.dataset.f; document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("on",c===b)); render();});

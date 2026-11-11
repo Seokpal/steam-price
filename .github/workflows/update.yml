@@ -2,22 +2,36 @@ name: 更新 Steam 价格
 
 on:
   schedule:
-    - cron: "7 * * * *"      # 每小时一次（GitHub 高峰期可能延迟十几分钟）
-  workflow_dispatch: {}       # 也可以在 Actions 页面手动点 "Run workflow"
+    - cron: "7 * * * *"      # 每小时：更新所有游戏的两区价格（GitHub 高峰期可能延迟十几分钟）
+    - cron: "37 19 * * *"    # 每天日本时间 4:37：自动收集新游戏（热销榜 / 两区打折 / 在线人数榜）
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: "同时自动收集新游戏"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
 
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/update.mjs
-      - name: 提交新价格
+      - name: 抓取价格
+        env:
+          MODE: ${{ (github.event.schedule == '37 19 * * *' || inputs.discover) && 'discover' || 'prices' }}
+        run: node scripts/update.mjs
+      - name: 提交新数据
         run: |
           git config user.name "price-bot"
           git config user.email "price-bot@users.noreply.github.com"
